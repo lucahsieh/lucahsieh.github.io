@@ -5,13 +5,22 @@
     border-radius: 5px;
     border: 1px solid #204265;
     margin: 0;
-}
-.social-style:hover{
-    background-color: #7EC333;
+    color: #204265;
 }
 .social-style a{
     color: #204265;
 }
+.social-style:hover{
+    background-color: #204265;
+    color: #F0F0F0;
+}
+
+.social-style:hover a i{
+    background-color: #204265;
+    color: #F0F0F0;
+}
+
+
 
 .section-pt-pd{
     padding: 1rem;
