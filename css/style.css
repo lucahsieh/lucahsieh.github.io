@@ -3,14 +3,14 @@
 .social-style{
     padding: 6px 16px;
     border-radius: 5px;
-    background-color: #7EC333;
+    border: 1px solid #204265;
     margin: 0;
 }
 .social-style:hover{
-    background-color: #204265;
+    background-color: #7EC333;
 }
 .social-style a{
-    color: #fff;
+    color: #204265;
 }
 
 .section-pt-pd{

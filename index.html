@@ -23,7 +23,7 @@
 
     <!-- NAVIGATION -->
     <div id="navbar-site" class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
-        <div class="container">
+        <div class="container d-flex justify-content-center text-center justify-content-sm-between">
 
             <!-- <div class="navbar-brand d-none d-sm-block h1" href="#">
                 Luca Studio
@@ -41,14 +41,14 @@
     </div><!-- navbar -->
 
     <!-- JUMBOTRON -->
-    <div class="jumbotron jumbotron-fluid d-none d-sm-block pt-3">
+    <div class="jumbotron jumbotron-fluid d-none d-sm-block pt-5">
         <div class="jumbotron-style bg_header-top"></div>
         <div class="jumbotron-style bg_header-light"></div>
         <div class="jumbotron-style bg_header-end"></div>
         <div class="container text-dark pt-md-2 text-center">
             <p class="d-none d-md-block">
-                <span class="display-2 font-weight-normal">Hello,<br></span>
-                <span class="display-2 font-weight-bold">My name is Luca.</span><br>
+                <span class="display-4 font-weight-normal">Hello,<br></span>
+                <span class="display-4 font-weight-bold">My name is Luca.</span><br>
                 <span class="lead">I'm a CST Co-op student in BCIT.</span><br>
                 <a href="./doc/resume.pdf" download>
                     <button class="btn btn-lg btn-secondary mt-4">View my résumé</button>
@@ -78,8 +78,8 @@
         <div class="container section-pt-pd">
         <div class="text-center"><h2 class=" mb-5 title-cstmz" id="projects">Projects</h2></div>
             <div class="card-columns">
-                <div >
-                <div class="card" >
+
+                <div class="card btn-secondary" data-toggle="modal" data-target="#projectDictateTube">
                     <img class="card-img-top" src="./img/project_dictateTube.png" alt="dictateTube Screenshot">
                     <div class="card-body">
                         <h5 class="card-title">DictateTube</h5>
@@ -87,28 +87,9 @@
                         <p class="card-text"></p>
                         <span class="badge badge-warning">Javascript</span>
                     </div>
-                    <div class="modal-footer " type="button" data-toggle="modal" data-target="#projectDictateTube">
-                        <a ><i class="fas fa-link"></i></a>
-                    </div>
-                </div>
                 </div>
 
-                <div class="card btn-secondary"   data-toggle="modal" data-target="#projectDictateTube">
-                    <img class="card-img-top" src="./img/project_dictateTube.png" alt="dictateTube Screenshot">
-                    <div class="card-body">
-                        <h5 class="card-title">DictateTube</h5>
-                        <h6 class="card-subtitle">Developer | Cyberfair | Aug. 2018 - present</h6>
-                        <p class="card-text"></p>
-                        <span class="badge badge-warning">Javascript</span>
-                    </div>
-                    <div class="modal-footer " type="button" data-toggle="modal" data-target="#projectDictateTube">
-                        <a ><i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-                </div>
-
-                <div class="btn-secondary " type="button" data-toggle="modal" data-target="#projectEasyGrocery">
-                <div class="btn-secondary card">
+                <div class="btn-secondary card" data-toggle="modal" data-target="#projectEasyGrocery">
                     <img class="card-img-top" src="./img/project_easyGrocery.png" alt="EasyGrocery Screenshot">
                     <div class="card-body">
                         <h5 class="card-title">EasyGrocery</h5>
@@ -117,17 +98,14 @@
                         <span class="badge badge-warning">Javascript</span>
                     </div>
                 </div>
-                </div>
 
-                <div class="btn-secondary " type="button" data-toggle="modal" data-target="#projectCyberFair">
-                <div class="btn-secondary card">
+                <div class="btn-secondary card" data-toggle="modal" data-target="#projectCyberFair">
                     <img class="card-img-top" src="./img/project_cyberFair.png" alt="Cyberfair Screenshot">
                     <div class="card-body">
                         <h5 class="card-title">A Charming asset to Miaoli</h5>
                         <h6 class="card-subtitle">Developer | Cyberfair | 2011</h6>
                         <p class="card-text"></p>
                     </div>
-                </div>
                 </div>
             </div><!-- card-column(group) -->
 
@@ -209,7 +187,7 @@
 
     <!-- ABOUT -->
     <div class="bg-light">
-    <div class="container section-pt-pd">
+    <div class="container section-pt-pd pt-5">
 
         <div class="row">
             <div class="col-sm-4 d-none d-sm-block">
@@ -477,31 +455,32 @@
     <div class="bg-light section-pt-pd" id="contact">
     <div class="container" id="contact">
         <div class="row text-center justify-content-center">
-            <h2 class="mt-5 mb-5 title-cstmz">Contact</h2>
+            <h2 class="mt-5 mb-5 title-cstmz ">Contact</h2>
         </div>
         
         <div class="row d-flex justify-content-center">
             <div class="col-lg-1 d-none d-lg-block"></div>
-            <div class="col-5 col-md-5 col-lg-3 d-flex flex-column justify-content-center mb-4">
-                <img style="width: 100%" src="./img/logo-lg-colored.png" alt="luca">
+            <div class="col-7 col-md-5 col-lg-3 d-flex flex-column justify-content-start mb-4">
+                <img class="mb-sm-3" style="width: 100%" src="./img/logo-lg-colored.png" alt="luca">
             </div>
-            <div class="col-12 col-md-5 col-lg-4 d-flex flex-column justify-content-center text-center text-md-left mb-5">
-                <h6 class="h4 mb-3">Let's get in touch</h6>
-                <ul class="list-inline mb-1">
-                    <li class="list-inline-item social-style"><a href="https://github.com/lucahsieh"><i class="icon fab fa-github fa-lg"></i></a></li>
-                    <li class="list-inline-item social-style"><a href="https://www.linkedin.com/in/lucahsieh/"><i class="icon fab fa-linkedin-in fa-lg"></i></a></li>
-                    <li class="list-inline-item social-style"><a href=""><i class="icon fas fa-external-link-alt fa-lg"></i></a></li>
-                </ul>
-                <div class="social-style d-block ml-auto mr-auto ml-md-0 mr-md-0 mt-2" style="max-width:280px;">
-                    <a class="d-inline-block" href="mailto:chsieh39@my.bcit.ca"><i class="fas fa-envelope fa-lg"></i>
-                        <i class="h5 ml-2">chsieh39@my.bcit.ca</i>
-                    </a>
-                </div> 
-                <div class="social-style d-block ml-auto mr-auto ml-md-0 mr-md-0 mt-2" style="max-width:280px;">
-                    <span class="d-inline-block text-white" href="mailto:chsieh39@my.bcit.ca"><i class="fas fa-phone fa-lg"></i>
-                        <i class="h5 ml-2">+1 236 865-9199</i>
-                    </span>
-                </div> 
+            <div class="col-12 col-md-5 col-lg-4 d-flex flex-column justify-content-between text-center text-md-left mb-5">
+                <ul class="list-inline">
+                    <li class="list-inline-item social-style mr-0">
+                            <a class="d-inline-block text-dark" href="mailto:chsieh39@my.bcit.ca" style="width:280px;"><i class="fas fa-envelope fa-lg"></i>
+                                <i class="h5 ml-2">chsieh39@my.bcit.ca</i>
+                            </a>
+                    </li>
+                    <li class="list-inline-item social-style mt-2 mb-2 mr-0">
+                            <span class="d-inline-block text-dark" style="width:280px;" ><i class="fas fa-phone fa-lg"></i>
+                                <i class="h5 ml-2">+1 236 865-9199</i>
+                            </span>
+                    </li>
+                    <li>
+                        <li class="list-inline-item social-style"><a href="https://github.com/lucahsieh"><i class="icon fab fa-github fa-lg"></i></a></li>
+                        <li class="list-inline-item social-style"><a href="https://www.linkedin.com/in/lucahsieh/"><i class="icon fab fa-linkedin-in fa-lg"></i></a></li>
+                        <li class="list-inline-item social-style"><a href=""><i class="icon fas fa-external-link-alt fa-lg"></i></a></li>
+                    </li>
+                </ul>   
             </div>
         </div><!-- row -->
     </div></div>
