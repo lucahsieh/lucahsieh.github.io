@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/luca2.css">
+
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Yellowtail" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <title>Luca</title>
+</head>
+<body data-spy="scroll" data-target="#navbar-site" data-offset="100">
+
+    <!-- NAVIGATION -->
+    <div id="navbar-site" class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
+        <div class="container">
+
+            <!-- <div class="navbar-brand d-none d-sm-block h1" href="#">
+                Luca Studio
+            </div> -->
+            <img class="navbar-brand d-none d-sm-block" src="./img/logo-lg-white.png" alt="logo" style="width:100px">
+
+            <ul class="navbar-nav ">
+                <li class="nav-item"><a class=" nav-link active" href="#projects">Porjects</a></li>
+                <li class="nav-item"><a class=" nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class=" nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class=" nav-link" href="#contact">Contact</a></li>
+
+            </ul><!-- navbar-nav -->
+        </div><!-- container -->
+    </div><!-- navbar -->
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron jumbotron-fluid d-none d-sm-block">
+        <div class="jumbotron-style bg_header-top"></div>
+        <div class="jumbotron-style bg_header-light"></div>
+        <div class="jumbotron-style bg_header-end"></div>
+        <div class="container text-dark pt-md-2 text-center">
+            <p class="d-none d-md-block">
+                <span class="display-2 font-weight-normal">Hello,<br></span>
+                <span class="display-2 font-weight-bold">My name is Luca.</span><br>
+                <span class="lead">I'm a CST Co-op student in BCIT.</span><br>
+                <a href="./doc/resume.pdf" download>
+                    <button class="btn btn-lg btn-secondary mt-4">View my résumé</button>
+                </a>  
+            </p>
+            <p class="d-none d-md-none d-sm-block mt-4">
+                <span class="display-3 font-weight-normal">Hello,<br></span>
+                <span class="display-3 font-weight-bold">I'm Luca.</span><br>
+                <span class="lead">I'm a CST Co-op student in BCIT.</span><br>
+                <a href="./doc/resume.pdf" download><button class="btn btn-lg btn-secondary mt-4">View my résumé</button></a> 
+            </p>
+        </div><!-- container -->
+    </div>
+    <div class=" d-sm-none position-relative bg-light">
+        <p class="d-block d-sm-none text-dark pt-4 pb-2 ml-3 mr-1 text-center">
+            <span class="display-4 font-weight-normal">Hello,<br></span>
+            <span class="display-4 font-weight-bold">My name is Luca.</span><br>
+            <span class="lead">I'm a CST Co-op student in BCIT.</span><br>
+            <a href="./doc/resume.pdf" download><button class="btn btn-lg btn-secondary mt-4">View my résumé</button></a> 
+        </p>
+    </div>
+    <div class=" d-sm-none position-relative bg-light slop-b-toR"></div>
+
+
+    <!-- PROJECTS-->
+    <div class="">
+        <div class="container section-pt-pd">
+        <div class="text-center"><h2 class=" mb-5 title-cstmz" id="projects">Projects</h2></div>
+            <div class="card-columns">
+                <div class="card btn-secondary" type="button" data-toggle="modal" data-target="#projectDictateTube">
+                    <img class="card-img-top" src="./img/project_dictateTube.png" alt="dictateTube Screenshot">
+                    <div class="card-body">
+                        <h5 class="card-title">DictateTube</h5>
+                        <h6 class="card-subtitle">Developer | Cyberfair | Aug. 2018 - present</h6>
+                        <p class="card-text"></p>
+                        <span class="badge badge-warning">Javascript</span>
+                    </div>
+                </div>
+
+                <div class="card btn-secondary" type="button" data-toggle="modal" data-target="#projectEasyGrocery">
+                    <img class="card-img-top" src="./img/project_easyGrocery.png" alt="EasyGrocery Screenshot">
+                    <div class="card-body">
+                        <h5 class="card-title">EasyGrocery</h5>
+                        <h6 class="card-subtitle">Developer | Metro Vancouver Project | May 2018</h6>
+                        <p class="card-text"></p>
+                        <span class="badge badge-warning">Javascript</span>
+                    </div>
+                </div>
+
+                <div class="card btn-secondary" type="button" data-toggle="modal" data-target="#projectCyberFair">
+                    <img class="card-img-top" src="./img/project_cyberFair.png" alt="Cyberfair Screenshot">
+                    <div class="card-body">
+                        <h5 class="card-title">A Charming asset to Miaoli</h5>
+                        <h6 class="card-subtitle">Developer | Cyberfair | 2011</h6>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div><!-- card-column(group) -->
+
+            <!-- Modals -->
+            <div class="modal fade" id="projectDictateTube" tabindex="-1" role="dialog" aria-labelledby="projectDictateTube" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectDictateTubeTitle">DictateTube</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="card-img" src="./img/project_dictateTube.png" alt="dictateTube Screenshot">
+                            <ul class="mt-4">
+                                <li>Developed a JavaScript-based web application with Firebase database for generating grocery list</li>
+                                <li>Generate a shopping list based on the user’s nutritional requirement</li>
+                                <li>Learned Firebase, JavaScript and agile methodology of 5-person team</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-outline-dark" href="https://dictatetube.firebaseapp.com/" target="_blank"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+            </div><!-- modal -->
+
+            <div class="modal fade" id="projectEasyGrocery" tabindex="-1" role="dialog" aria-labelledby="projectEasyGrocery" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectEasyGroceryTitle">EasyGrocery</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="card-img" src="./img/project_easyGrocery.png" alt="EasyGrocery Screenshot">
+                            <ul class="mt-4">
+                                <li>Developed a JavaScript-based web application with Firebase database for generating grocery list</li>
+                                <li>Generate a shopping list based on the user’s nutritional requirement</li>
+                                <li>Learned Firebase, JavaScript and agile methodology of 5-person team</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-outline-dark float-right" href="https://easygroce-59546.firebaseapp.com/" target="_blank"><i class="fas fa-link"></i></a>
+                            <a class="btn btn-outline-dark float-right mr-2" href="https://www.youtube.com/watch?v=aJmEI5UZYYs" target="_blank"><i class="fas fa-video"></i></a>
+                        </div>
+                    </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+            </div><!-- modal -->
+
+            <div class="modal fade" id="projectCyberFair" tabindex="-1" role="dialog" aria-labelledby="projectCyberFair" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectCyberFairTitle">A Charming asset to Miaoli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="card-img" src="./img/project_cyberFair.png" alt="EasyGrocery Screenshot">
+                            <ul class="mt-4">
+                                <li>Led a group of 12 classmates and built a website introducing the ceramic art industry in my Hometown</li>
+                                <li>Attended the International School Cyberfair and won the gold prize</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-outline-dark float-right" href="http://www.globalschoolnet.org/gsncf/narrative_view.cfm?pID=6589" target="_blank"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+            </div><!-- modal -->
+
+        </div><!-- container -->
+    </div>
+
+    <!-- ABOUT -->
+    <div class="bg-light">
+    <div class="container section-pt-pd">
+
+        <div class="row">
+            <div class="col-sm-4 d-none d-sm-block">
+                <div class="photo-container float-right">
+                    <img class="rounded img-luca " src="./img/mypicture.png" alt="photo of Luca">
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <h2 class="mt-5 mb-5 title-cstmz"  id="about">About Me</h2>
+                <p class="aboutme-text">I've had a keen interest in creating new things ever since I was a kid. It gives me with great enjoyment by making tools that help people to slove their problems. I am fortunate enough to be a CST student in BCIT with a bachelor's degree in design school. My goal is to combine both experience in design and computer to produce creative software that is competitive in the market.</p>
+                <a class="btn btn-primary" href="#coursework" data-toggle="collapse" 
+                role="button" aria-expanded="false" aria-controls="Coursework">
+                Coursework</a>
+            </div>
+            
+        </div><!-- row -->
+
+
+        <div class="row mt-3 mb-5">
+            <div class="col-sm">
+                <ul class="list-group collapse" id="coursework">
+                    <li class="list-group-item bg-secondary">BCIT</li>
+                    <li class="list-group-item">BUSA 2720 - Business in a Networked Econ</li>
+                    <li class="list-group-item">COMM 1106 - Intro Business and Technical Communication</li>
+                    <li class="list-group-item">COMM 1116 - Business Communications 1</li>
+                    <li class="list-group-item">COMM 2216 - Business Communications 2</li>
+                    <li class="list-group-item">COMP 1113 - Applied Mathematics</li>
+                    <li class="list-group-item">COMP 2121 - Discrete Mathematics</li>
+                    <li class="list-group-item">COMP 1850 - Web Development and Design 1</li>
+                    <li class="list-group-item">COMP 1100 - CST Program Fundamentals</li>
+                    <li class="list-group-item">COMP 1111 - Essential Skills for Computing</li>
+                    <li class="list-group-item">COMP 1510 - Programming Methods</li>
+
+                </ul>  
+            </div>
+            <div class="col-sm">
+                <ul class="list-group collapse" id="coursework">
+                    <li class="list-group-item">COMP 1536 - Intro to Web Development</li>
+                    <li class="list-group-item">COMP 2910 - Projects</li>
+                    <li class="list-group-item">COMP 2510 - Procedural Programming in C</li>
+                    <li class="list-group-item">COMP 2522 - Object Oriented Programming 1</li>
+                    <li class="list-group-item">COMP 2714 - Relational Database Systems</li>
+                    <li class="list-group-item">COMP 2721 - Computer Organization/Architecture</li>
+                    <li class="list-group-item">COMP 2526 - Object-Oriented Programming with JAVA</li>
+                    <li class="list-group-item bg-secondary">On-line Learning</li>
+                    <li class="list-group-item">Bootstrap 4 Essential Training</li>
+                    <li class="list-group-item">The Complete JavaScript Course 2018</li>
+                    <li class="list-group-item">iOS 11 & Swift 4 - The Complete iOS App Development Bootcamp</li>
+                </ul>
+            </div>
+
+        </div><!-- row -->
+    </div><!-- container-->
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="container text-center">
+        <h2 class="text-center mt-5 mb-3 title-cstmz" id="experience">Experience</h2>
+    </div>
+        <div class="plugin" style="position:relative; diplay:block; width: 700px; transform: translateX(-50%); left: 50vw; ">
+        <div class="flex-parent d-none d-md-block">
+            <div class="input-flex-container">
+
+
+                <input type="radio" name="timeline-dot" class=" hide-tl" data-description="2" style="visibility: hidden;">
+                <div class="dot-info hide-tl" data-description="2" style="visibility: hidden;">
+                    <span class="year hide-tl" style="visibility: hidden;">2014 Oct.</span>
+                    <span class="label hide-tl" style="visibility: hidden;">Design<br>Workshop</span>
+                </div>
+
+                
+
+                <input type="radio" name="timeline-dot" data-description="1" checked>
+                <div class="dot-info" data-description="1" >
+                    <span class="year">Sep. 2012 -<br> Jun. 2016</span>
+                    <span class="label">Shih Chien<br>University</span>
+                </div>
+
+                <input type="radio" name="timeline-dot" data-description="2">
+                <div class="dot-info" data-description="2">
+                    <span class="year">Jan. 2018 -<br> Present</span>
+                    <span class="label">British Columbia<br>Institute of Technology</span>
+                </div>
+
+                <input type="radio" name="timeline-dot" class=" hide-tl" data-description="3" style="visibility: hidden;">
+                <div class="dot-info" data-description="3" style="visibility: hidden;">
+                    <span class="year" style="visibility: hidden;">2016 Jun.</span>
+                    <span class="label" style="visibility: hidden;">Chairperson</span>
+                </div>
+
+
+
+                <div id="timeline-descriptions-wrapper">
+                    <div class="container">
+                        <div data-description="1" class="timeline-descriptions-item mb-5">
+                            <h5 class="text-center">
+                                <!-- <span class="h3 text-dark ">Shih Chien University, Taiwan</span><br> -->
+                                <span class="bg-info d-inline-block rounded m-2 pl-4 pr-4 text-white font-weight-normal pt-2 pb-2">Bachelor of Arts Degree, Department of Industrial Design</span><br>
+                                <span class="h5 pl-4 pr-4 d-inline-block font-weight-normal m-2" style="max-width:600px;">Studied the user experience and user interface design in mobile application and consumer appliance</span>
+                            </h5>
+                        </div>
+                        <div data-description="2" class="timeline-descriptions-item mb-5">
+                            <h5 class="text-center">
+                                <!-- <span class="h3 text-dark ">British Columbia Institute of Technology</span><br> -->
+                                <span class="bg-info d-inline-block rounded m-2 pl-4 pr-4 text-white font-weight-normal pt-2 pb-2">Diploma in Computer System Technologyn</span><br>
+                                <span class="h5 pl-4 pr-4 d-inline-block font-weight-normal">CGPA:91%</span>
+                            </h5>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Old layout for timeline cards -->
+                    <!--
+                    <div data-description="1" class="timeline-descriptions-item">
+                        <div  class="card d-block" style="width: 22rem;">
+                            <img class="card-img card-img-bottom" src="./img/experience_paris.png" alt="School Representative photo">
+                            <div class="card-body">
+                                <h5 class="card-title">School Representative </h5>
+                                <h6 class="card-subtitle mt-2 mb-2">Designer Week: Le Festival du Design | Paris, France</h6>
+                                <p class="card-text">Interact with guests, Introduced the exhibit and university to the guests<br>Designed graphic and publication, arranged the display</p>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+
+                </div>
+            </div><!-- input-flex-container -->
+        </div><!-- flex-parent -->
+        </div><!--plugin-->
+        <div class="container mb-5">
+            <div class="row d-flex justify-content-center">
+                
+                <div class="col-12 col-sm-10 col-md-4 col-lg-12 p-0">
+                    <div  class="card d-block border-primary m-2">
+                        <div class="card-body p-0">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-4 d-sm-block d-none">
+                                    <div id="schoolRepresentative" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#schoolRepresentative" data-slide-to="0" class="active"></li>
+                                            <li data-target="#schoolRepresentative" data-slide-to="1"></li>
+                                            <li data-target="#schoolRepresentative" data-slide-to="2"></li>
+                                            <li data-target="#schoolRepresentative" data-slide-to="3"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                            <img class="d-block card-img exp-slides" src="./img/experience_paris1.png" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                        <img class="d-block card-img exp-slides" src="./img/experience_paris2.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                        <img class="d-block card-img exp-slides" src="./img/experience_paris2.png" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                        <img class="d-block card-img exp-slides" src="./img/experience_paris2.png" alt="Third slide">
+                                        </div>
+                                        </div>
+                                        </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-8 pl-lg-0">
+                                    <h4 class="card-title text-dark pl-3 pr-3 pt-3 pl-lg-0">School Representative</h4>
+                                    <h6 class="card-subtitle mb-3 pl-3 pr-3  pl-lg-0">Designer Week:<br> Le Festival du Design | Paris, France</h6>
+                                    <p class="card-text  border-primary pl-3 pr-3 pb-1 mb-1 pl-lg-0">
+                                        <i class="fas fa-asterisk fa-xs mr-2 text-secondary"></i>
+                                        Interact with guests, Introduced the exhibit and university to the guests</p>
+                                    <p class="card-text border-primary pl-3 pr-3 pb-1 mb-1 pl-lg-0">
+                                        <i class="fas fa-asterisk fa-xs mr-2 text-secondary"></i>
+                                        Designed graphic and publication, arranged the display</p>    
+                                </div>
+                            </div>
+                        </div><!-- card body -->
+                    </div><!-- card -->
+                </div><!-- col -->
+                <div class="col-12 col-sm-10 col-md-4 col-lg-12 p-0">
+                    <div  class="card d-block border-primary m-2">
+                        <div class="card-body p-0">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-4 d-sm-block d-none">
+                                    <div id="Chairperson" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#Chairperson" data-slide-to="0" class="active"></li>
+                                            <li data-target="#Chairperson" data-slide-to="1"></li>
+                                            <li data-target="#Chairperson" data-slide-to="2"></li>
+                                            <li data-target="#Chairperson" data-slide-to="3"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                            <img class="d-block card-img exp-slides" src="./img/experience_yodex0.png" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                        <img class="d-block card-img exp-slides" src="./img/experience_yodex1.png" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                        <img class="d-block card-img exp-slides" src="./img/experience_yodex2.png" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                        <img class="d-block card-img exp-slides" src="./img/experience_yodex3.png" alt="Third slide">
+                                        </div>
+                                        </div>
+                                        </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-8  pl-lg-0">
+                                    <h4 class="card-title text-dark pl-3 pr-3 pt-3 pl-lg-0">Chairperson</h4>
+                                    <h6 class="card-subtitle mb-3 pl-3 pr-3 pl-lg-0 ">Young Designer’ Exhibition: <br>Shih Chien University section | Taipei, Taiwan</h6>
+                                    <p class="card-text  border-primary pl-3 pr-3 pb-1 mb-1 pl-lg-0">
+                                        <i class="fas fa-asterisk fa-xs mr-2 text-secondary"></i>
+                                        Served as coordinator with school, students, supplier, and exhibition organizer</p>
+                                    <p class="card-text border-primary pl-3 pr-3 pb-1 mb-1 pl-lg-0">
+                                        <i class="fas fa-asterisk fa-xs mr-2 text-secondary"></i>
+                                        Arranged the display, graphic, created publication designs including an annual book (424 pages)</p>    
+                                </div>
+                            </div>
+                        </div><!-- card body -->
+                    </div><!-- card -->
+                </div><!-- col -->
+                <div class="col-12 col-sm-10 col-md-4 col-lg-12 p-0">
+                    <div  class="card d-block border-primary m-2">
+                        <div class="card-body p-0">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-4 d-sm-block d-none">
+                                    <div id="Package" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#Package" data-slide-to="0" class="active"></li>
+                                            <li data-target="#Package" data-slide-to="1"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item ">
+                                            <img class="d-block card-img exp-slides" src="./img/experience_package.png" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item active">
+                                        <img class="d-block card-img exp-slides" src="./img/experience_package2.png" alt="Second slide">
+                                        </div>
+                                        </div>
+                                        </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-8  pl-lg-0">
+                                    <h4 class="card-title text-dark pl-3 pr-3 pt-3 pl-lg-0">Package Designer (Co-op program)</h4>
+                                    <h6 class="card-subtitle mb-3 pl-3 pr-3  pl-lg-0">Glory Innovations Inc. | Taipei, Taiwan</h6>
+                                    <p class="card-text  border-primary pl-3 pr-3 pb-1 mb-1 pl-lg-0">
+                                        <i class="fas fa-asterisk fa-xs mr-2 text-secondary"></i>
+                                        Designed the package for the company to participate the annual package exhibition</p>
+                                    <p class="card-text border-primary pl-3 pr-3 pb-1 mb-1 pl-lg-0">
+                                        <i class="fas fa-asterisk fa-xs mr-2 text-secondary"></i>
+                                        Identified the company’s latest printing technology and applied into design concept</p>    
+                                </div>
+                            </div>
+                        </div><!-- card body -->
+                    </div><!-- card -->
+                </div><!-- col -->
+                
+                
+                
+                
+            </div><!-- row -->
+        </div><!-- container -->
+
+        
+        
+    </div>
+
+
+
+    <!-- CONTACT -->
+    <div class="bg-light section-pt-pd" id="contact">
+    <div class="container" id="contact">
+        <div class="row text-center justify-content-center">
+            <h2 class="mt-5 mb-5 title-cstmz">Contact</h2>
+        </div>
+        
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-1 d-none d-lg-block"></div>
+            <div class="col-5 col-md-5 col-lg-3 d-flex flex-column justify-content-center mb-4">
+                <img style="width: 100%" src="./img/logo-lg-colored.png" alt="luca">
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 d-flex flex-column justify-content-center text-center text-md-left mb-5">
+                <h6 class="h4 mb-3">Let's get in touch</h6>
+                <ul class="list-inline mb-1">
+                    <li class="list-inline-item social-style"><a href="https://github.com/lucahsieh"><i class="icon fab fa-github fa-lg"></i></a></li>
+                    <li class="list-inline-item social-style"><a href="https://www.linkedin.com/in/lucahsieh/"><i class="icon fab fa-linkedin-in fa-lg"></i></a></li>
+                    <li class="list-inline-item social-style"><a href=""><i class="icon fas fa-external-link-alt fa-lg"></i></a></li>
+                </ul>
+                <div class="social-style d-block ml-auto mr-auto ml-md-0 mr-md-0 mt-2" style="max-width:280px;">
+                    <a class="d-inline-block" href="mailto:chsieh39@my.bcit.ca"><i class="fas fa-envelope fa-lg"></i>
+                        <i class="h5 ml-2">chsieh39@my.bcit.ca</i>
+                    </a>
+                </div> 
+                <div class="social-style d-block ml-auto mr-auto ml-md-0 mr-md-0 mt-2" style="max-width:280px;">
+                    <span class="d-inline-block text-white" href="mailto:chsieh39@my.bcit.ca"><i class="fas fa-phone fa-lg"></i>
+                        <i class="h5 ml-2">+1 236 865-9199</i>
+                    </span>
+                </div> 
+            </div>
+        </div><!-- row -->
+    </div></div>
+
+
+    <!-- FOOTER -->
+    <div class="bg-dark">
+        <div class="container text-center pt-4 pb-4 text-white">
+                © 2018 by Luca Hsieh.
+            </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Scrolling Controller -->
+    <script>
+    $(function() {
+    var topoffset = 100; //variable for menu height
+
+    //Use smooth scrolling when clicking on navigation
+    $('.navbar-nav a').click(function() {
+        if (location.pathname.replace(/^\//,'') === 
+        this.pathname.replace(/^\//,'') && 
+        location.hostname === this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+            $('html,body').animate({
+            scrollTop: target.offset().top-topoffset
+            }, 500);
+            return false;
+        } //target.length
+        } //click function
+    }); //smooth scrolling
+
+    });
+    </script>
+
+</body>
+</html>
