@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversion Assistant</title>
+    <script type="module" crossorigin src="/conversion-assistant.js"></script>
+    <link rel="stylesheet" crossorigin href="/conversion-assistant2.css">
+  </head>
+  <body style="overflow-x: hidden">
+    <!-- Embed code -->
+    <div id="leadpages-coversion-assistant"></div>
+
+    <!-- toggle theme -->
+    <div style="position: fixed; background-color: white">
+      <span>Select an theme:</span>
+      <label>
+        <input type="radio" name="options" value="standard" checked /> standard
+      </label>
+      <label> <input type="radio" name="options" value="red" /> red </label>
+      <label> <input type="radio" name="options" value="blue" /> blue </label>
+      <label> <input type="radio" name="options" value="green" /> green </label>
+
+      <script>
+        const radioButtons = document.getElementsByName("options");
+        radioButtons.forEach((radio) => {
+          radio.addEventListener("change", (event) => {
+            let theme = document.getElementById("theme");
+            theme.setAttribute("href", `src/theme/${event.target.value}.css`);
+          });
+        });
+      </script>
+    </div>
+
+    <!-- background -->
+    <div style="height: 120vh; width: 100vw; background-color: black"></div>
+    <div style="height: 120vh; width: 100vw; background-color: white"></div>
+    <div
+      style="
+        height: 120vh;
+        width: 100vw;
+        --odd-background: black;
+        --even-background: #fff;
+        --line-height: 5vh;
+        line-height: var(--line-height);
+        background: repeating-linear-gradient(
+          var(--odd-background),
+          var(--odd-background) var(--line-height),
+          var(--even-background) var(--line-height),
+          var(--even-background) calc(2 * var(--line-height))
+        );
+      "
+    ></div>
+    <div style="height: 120vh; width: 100vw; background-color: #1e1e1e"></div>
+    <div style="height: 120vh; width: 100vw; background-color: #2b2b2b"></div>
+  </body>
+</html>
