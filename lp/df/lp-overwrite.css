@@ -1,0 +1,123 @@
+* {
+  /* lp css variable */
+  --lpca-message-border-radius: 32px;
+  --lpca-m-white: #fff;
+  --lpca-m-grey: #aaa;
+  --lpca-m-glass-full: linear-gradient(
+    92deg,
+    rgba(22, 22, 22, 0.6) 20.62%,
+    rgba(85, 85, 85, 0.6) 47.08%,
+    rgba(22, 22, 22, 0.6) 73.54%
+  );
+  --lpca-m-white-60: rgba(255, 255, 255, 0.4);
+  --lpca-m-white-12: rgba(255, 255, 255, 0.12);
+  --lpca-m-white-4: rgba(255, 255, 255, 0.04);
+
+  /* google dialog flow */
+  --df-messenger-font-family: "Inter", sans-serif;
+  --df-messenger-font-size: 12px;
+  --df-messenger-font-color: white;
+  --df-messenger-primary-color: red;
+  --df-messenger-chat-border: 0px solid orange;
+
+  /* title */
+  --df-messenger-titlebar-title-font-family: "Inter", sans-serif;
+  --df-messenger-titlebar-title-font-size: 14px;
+  --df-messenger-titlebar-padding: 0px 12px;
+  --df-messenger-titlebar-font-color: white;
+  --df-messenger-titlebar-border: 1px solid
+    var(--lpca-m-white-12, rgba(255, 255, 255, 0.12));
+  --df-messenger-titlebar-border-bottom: 1px solid
+    var(--lpca-m-white-12, rgba(255, 255, 255, 0.12));
+  --df-messenger-titlebar-background: var(
+    --lpca-m-glass-full,
+    linear-gradient(
+      93deg,
+      rgba(22, 22, 22, 0.6) 25%,
+      rgba(85, 85, 85, 0.6) 50%,
+      rgba(22, 22, 22, 0.6) 75%
+    )
+  );
+  --df-messenger-chat-border-radius: 32px;
+  --df-messenger-titlebar-icon-width: 40px;
+  --df-messenger-titlebar-icon-height: 40px;
+
+  /* Message Container */
+  --df-messenger-chat-background: none;
+  --df-messenger-chat-padding: 82px 0px 56px 0px;
+
+  /* Message */
+  --df-messenger-message-border-radius: var(--lpca-message-border-radius, 32px);
+
+  /* Bot Message */
+  --df-messenger-message-bot-border: 1px solid
+    var(--lpca-m-white-12, rgba(255, 255, 255, 0.12));
+  --df-messenger-message-bot-border-top-left-radius: var(
+    --lpca-message-border-radius,
+    32px
+  );
+  --df-messenger-message-bot-background: var(
+    --g-glass-full,
+    linear-gradient(
+      93deg,
+      rgba(22, 22, 22, 0.6) 25%,
+      rgba(85, 85, 85, 0.6) 50%,
+      rgba(22, 22, 22, 0.6) 75%
+    )
+  );
+
+  /* User Message */
+  --df-messenger-message-user-border-top-right-radius: var(
+    --lpca-message-border-radius,
+    32px
+  );
+  --df-messenger-message-user-background: var(
+    --lpca-g-full,
+    linear-gradient(180deg, #5e43e7 22%, #437fe7 100%)
+  );
+
+  /* Input Container */
+  --df-messenger-input-box-border-radius: 32px;
+  --df-messenger-input-background: var(
+    --lpca-m-glass-full,
+    linear-gradient(
+      93deg,
+      rgba(22, 22, 22, 0.6) 25%,
+      rgba(85, 85, 85, 0.6) 50%,
+      rgba(22, 22, 22, 0.6) 75%
+    )
+  );
+  --df-messenger-input-padding: 0px;
+
+  /* Sent Icon */
+  --df-messenger-send-icon-color: rgba(255, 255, 255, 0.6);
+  --df-messenger-send-icon-color-active: white;
+  --df-messenger-send-icon-offset-x: 0;
+  --df-messenger-send-icon-offset-y: 0;
+
+  /* Input */
+  --df-messenger-input-box-border: none;
+  --df-messenger-input-box-border-radius: 0px;
+  --df-messenger-input-box-focus-border: 0px solid RED;
+  --df-messenger-input-box-focus-padding: 16px 0 16px 32px;
+
+  --df-messenger-chat-scroll-button-container-padding: 60px;
+  --df-messenger-chat-scroll-button-align: center;
+  --df-messenger-chat-scroll-button-font-size: 8px;
+  --df-messenger-chat-scroll-button-font-color: white;
+  --df-messenger-chat-scroll-button-background: var(
+    --lpca-m-glass-full,
+    linear-gradient(
+      93deg,
+      rgba(22, 22, 22, 0.6) 25%,
+      rgba(85, 85, 85, 0.6) 50%,
+      rgba(22, 22, 22, 0.6) 75%
+    )
+  );
+
+  /* Bubble */
+  --df-messenger-chat-bubble-icon-size: 64px;
+  --df-messenger-chat-bubble-close-icon-size: 64px;
+  --df-messenger-chat-bubble-close-icon-transform-rotate: 0deg;
+  --df-messenger-chat-bubble-icon-color: transparent;
+}
