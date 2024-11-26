@@ -1,0 +1,74 @@
+<svg width="160" height="160" viewBox="-110 -110 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <g opacity="0.8" filter="url(#idle-filter-group-1)">
+      <g filter="url(#idle-filter-circle-1)" >
+         <circle class="idle-circle-outer" cx="0" cy="0" r="30.5px" 
+            fill="var(--animation-secondary-color, #1FBCFF)" 
+            style="animation: animation-idle-circle-outer-smooth 10s ease-in-out 0s infinite;"
+            />
+      </g>
+      <g filter="url(#idle-filter-circle-2)">
+         <circle class="idle-circle-center" cx="0" cy="0" r="18" 
+            fill="var(--animation-primary-color, #8E77FF)" 
+            style="animation: animation-idle-circle-center-smooth 10s ease-in-out 0s infinite;"
+            />
+      </g>
+      <g filter="url(#idle-filter-circle-3)">
+         <circle class="idle-circle-inner" cx="0" cy="0" r="0.5" 
+            fill="var(--animation-secondary-color, #1FBCFF)" 
+            style="animation: animation-idle-circle-inner-smooth 10s ease-in-out 0s infinite;"
+            />
+      </g>
+   </g>
+   <defs>
+      <filter id="idle-filter-circle-1" x="-110" y="-110" width="220" height="220" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+         <feGaussianBlur stdDeviation="15" />
+      </filter>
+      <filter id="idle-filter-circle-1" x="-110" y="-110" width="220" height="220"  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+         <feFlood flood-opacity="0" result="Backgridle-filter-circleoundImageFix"/>
+         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+         <feGaussianBlur stdDeviation="15"/>
+      </filter>
+      <filter id="idle-filter-circle-2" x="-110" y="-110" width="220" height="220"  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+         <feGaussianBlur stdDeviation="20" />
+      </filter>
+      <filter id="idle-filter-circle-3" x="-110" y="-110" width="220" height="220" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+         <feGaussianBlur stdDeviation="15" />
+      </filter>
+   </defs>
+   <style>
+      @keyframes animation-idle-circle-outer-smooth {
+      0%,
+      100% {
+      r: 30.5px;
+      }
+      33%,
+      66% {
+      r: 46px;
+      }
+      }
+      @keyframes animation-idle-circle-center-smooth {
+      0%,
+      100% {
+      r: 18px;
+      }
+      49% {
+      r: 46px;
+      }
+      }
+      @keyframes animation-idle-circle-inner-smooth {
+      0%,
+      100% {
+      r: 0.5px;
+      }
+      66% {
+      r: 6px;
+      }
+      }
+   </style>
+</svg>
