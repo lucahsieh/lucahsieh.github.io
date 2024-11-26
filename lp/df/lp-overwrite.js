@@ -1,11 +1,11 @@
 // Title Bar style
-var titleBar = document
+const titleBar = document
   .querySelector("df-messenger")
   .querySelector("df-messenger-chat-bubble")
   .shadowRoot.querySelector("df-messenger-chat")
   .querySelector("df-messenger-titlebar").shadowRoot;
 
-var titleBarStyle = document.createElement("style");
+const titleBarStyle = document.createElement("style");
 titleBarStyle.innerHTML = `
     .titlebar-wrapper { 
         border-radius: 32px; 
@@ -20,13 +20,13 @@ titleBarStyle.innerHTML = `
 titleBar.appendChild(titleBarStyle);
 
 // Input style
-var input = document
+const input = document
   ?.querySelector("df-messenger")
   ?.querySelector("df-messenger-chat-bubble")
   ?.shadowRoot?.querySelector("df-messenger-chat")
   ?.shadowRoot?.querySelector("df-messenger-user-input")?.shadowRoot;
 
-var inputStyle = document.createElement("style");
+const inputStyle = document.createElement("style");
 inputStyle.innerHTML = `
     .input-container { 
         border-radius: 32px; 
@@ -51,7 +51,7 @@ inputStyle.innerHTML = `
         scroll: none;
     }
     .input-container .input-box-wrapper .send-icon-button-wrapper:has(.action-button) {
-        background: var(
+        background: const(
             --lpca-g-full,
             linear-gradient(180deg, #5e43e7 22%, #437fe7 100%)
         );
@@ -67,4 +67,46 @@ inputStyle.innerHTML = `
     }
     `;
 input?.appendChild(inputStyle);
-console.log("luca", input);
+
+// Bubble
+const bubble = document
+  ?.querySelector("df-messenger")
+  ?.querySelector("df-messenger-chat-bubble")
+  ?.shadowRoot?.querySelector("button");
+const bubbleStyle = document.createElement("style");
+bubbleStyle.innerHTML = `
+    img {
+        z-index: 1;
+    }
+`;
+bubble?.appendChild(bubbleStyle);
+
+// Idle Animation
+const idleAnimation = document.createElement("object");
+idleAnimation.id = "idle-animation";
+idleAnimation.data = "https://lucahsieh.github.io/lp/df/svg/IdleAnimation.svg";
+idleAnimation.type = "image/svg+xml";
+idleAnimation.style.position = "absolute";
+idleAnimation.style.zIndex = "0";
+bubble?.insertBefore(idleAnimation, bubble?.firstChild);
+
+// Show Success Animation
+window.addEventListener("df-response-received", (event) => {
+  const successAnimation = document.createElement("object");
+  successAnimation.id = "success-animation";
+  successAnimation.className = "success-animation";
+  successAnimation.data =
+    "https://lucahsieh.github.io/lp/df/svg/SuccessAnimation.svg";
+  successAnimation.type = "image/svg+xml";
+  successAnimation.style.position = "absolute";
+  successAnimation.style.zIndex = "0";
+  successAnimation.style.bottom = "-310px";
+  bubble?.insertBefore(successAnimation, bubble?.firstChild);
+  setTimeout(() => {
+    const successAnimation = bubble.querySelector("#success-animation");
+    console.log("successAnimation", successAnimation);
+    if (successAnimation) {
+      successAnimation.parentNode.removeChild(successAnimation);
+    }
+  }, 10 * 1000 + 50);
+});
