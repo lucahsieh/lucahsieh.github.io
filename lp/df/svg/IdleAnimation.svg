@@ -2,19 +2,19 @@
    <g opacity="0.8" filter="url(#idle-filter-group-1)">
       <g filter="url(#idle-filter-circle-1)" >
          <circle class="idle-circle-outer" cx="0" cy="0" r="30.5px" 
-            fill="var(--animation-secondary-color, #1FBCFF)" 
+            fill="var(--lpca-secondary-color, #1FBCFF)" 
             style="animation: animation-idle-circle-outer-smooth 10s ease-in-out 0s infinite;"
             />
       </g>
       <g filter="url(#idle-filter-circle-2)">
          <circle class="idle-circle-center" cx="0" cy="0" r="18" 
-            fill="var(--animation-primary-color, #8E77FF)" 
+            fill="var(--lpca-primary-color, #8E77FF)" 
             style="animation: animation-idle-circle-center-smooth 10s ease-in-out 0s infinite;"
             />
       </g>
       <g filter="url(#idle-filter-circle-3)">
          <circle class="idle-circle-inner" cx="0" cy="0" r="0.5" 
-            fill="var(--animation-secondary-color, #1FBCFF)" 
+            fill="var(--lpca-secondary-color, #1FBCFF)" 
             style="animation: animation-idle-circle-inner-smooth 10s ease-in-out 0s infinite;"
             />
       </g>

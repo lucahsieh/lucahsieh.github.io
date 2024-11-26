@@ -2,18 +2,18 @@
    <style>
       @keyframes animation-success-circle4-color {
       33%, 68% {
-      fill: var(--animation-primary-color, #8E77FF);
+      fill: var(--lpca-primary-color, #8E77FF);
       }
       0%, 16%, 84% {
-      fill: var(--animation-secondary-color, #1FBCFF);
+      fill: var(--lpca-secondary-color, #1FBCFF);
       };
       }
       @keyframes animation-success-circle5-color {
       33%, 68% {
-      fill: var(--animation-secondary-color, #1FBCFF);
+      fill: var(--lpca-secondary-color, #1FBCFF);
       }
       0%, 16%, 84% {
-      fill: var(--animation-primary-color, #8E77FF)
+      fill: var(--lpca-primary-color, #8E77FF)
       };
       }
       .lpca-success-circle1-play {
@@ -140,11 +140,11 @@
    </style>
    <g filter="url(#success-filter-1)">
       <g filter="url(#success-filter-2)">
-         <circle id="lpca-success-circle1" class="lpca-success-circle1-play" cx="0" cy="0" r="35" fill="var(--animation-secondary-color, #1FBCFF)"/>
-         <circle id="lpca-success-circle2" class="lpca-success-circle2-play" cx="0" cy="0" r="35" fill="var(--animation-primary-color, #8E77FF)"/>
-         <circle id="lpca-success-circle3" class="lpca-success-circle3-play" cx="0" cy="0" r="35" fill="var(--animation-primary-color, #8E77FF)"/>
-         <circle id="lpca-success-circle4" class="lpca-success-circle4-play" cx="0" cy="0" r="35" fill="var(--animation-primary-color, #8E77FF)"/>
-         <circle id="lpca-success-circle5" class="lpca-success-circle5-play" cx="0" cy="0" r="35" fill="var(--animation-secondary-color, #1FBCFF)"/>
+         <circle id="lpca-success-circle1" class="lpca-success-circle1-play" cx="0" cy="0" r="35" fill="var(--lpca-secondary-color, #1FBCFF)"/>
+         <circle id="lpca-success-circle2" class="lpca-success-circle2-play" cx="0" cy="0" r="35" fill="var(--lpca-primary-color, #8E77FF)"/>
+         <circle id="lpca-success-circle3" class="lpca-success-circle3-play" cx="0" cy="0" r="35" fill="var(--lpca-primary-color, #8E77FF)"/>
+         <circle id="lpca-success-circle4" class="lpca-success-circle4-play" cx="0" cy="0" r="35" fill="var(--lpca-primary-color, #8E77FF)"/>
+         <circle id="lpca-success-circle5" class="lpca-success-circle5-play" cx="0" cy="0" r="35" fill="var(--lpca-secondary-color, #1FBCFF)"/>
       </g>
    </g>
    <defs>
