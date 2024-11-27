@@ -44,8 +44,6 @@ function applyStyles(primaryColor = mockMainColor, secondaryColor = null) {
     document.documentElement.style.setProperty(name, value);
   };
 
-  console.log("luca called");
-
   // Global styles
   setStyle("--lpca-m-white", "#fff");
   setStyle("--lpca-m-grey", "#aaa");
@@ -80,4 +78,7 @@ function applyStyles(primaryColor = mockMainColor, secondaryColor = null) {
   );
 }
 
-applyStyles();
+applyStyles(
+  DEFAULT_CONFIGURATION.primaryColor,
+  DEFAULT_CONFIGURATION.secondaryColor
+);
