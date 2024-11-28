@@ -1,26 +1,9 @@
-* {
-  /* lp css variable */
-  --lpca-message-border-radius: 32px;
-  --lpca-m-white: #fff;
-  --lpca-m-grey: #aaa;
-  --lpca-m-glass-full: linear-gradient(
-    92deg,
-    rgba(22, 22, 22, 0.6) 20.62%,
-    rgba(85, 85, 85, 0.6) 47.08%,
-    rgba(22, 22, 22, 0.6) 73.54%
-  );
-  --lpca-m-white-60: rgba(255, 255, 255, 0.4);
-  --lpca-m-white-12: rgba(255, 255, 255, 0.12);
-  --lpca-m-white-4: rgba(255, 255, 255, 0.04);
-
-  /* google dialog flow */
+df-messenger {
   --df-messenger-font-family: "Inter", sans-serif;
   --df-messenger-font-size: 12px;
   --df-messenger-font-color: white;
   --df-messenger-primary-color: red;
   --df-messenger-chat-border: 0px solid orange;
-
-  /* title */
   --df-messenger-titlebar-title-font-family: "Inter", sans-serif;
   --df-messenger-titlebar-title-font-size: 14px;
   --df-messenger-titlebar-padding: 0px 12px;
@@ -41,15 +24,9 @@
   --df-messenger-chat-border-radius: 32px;
   --df-messenger-titlebar-icon-width: 40px;
   --df-messenger-titlebar-icon-height: 40px;
-
-  /* Message Container */
   --df-messenger-chat-background: none;
   --df-messenger-chat-padding: 82px 0px 56px 0px;
-
-  /* Message */
   --df-messenger-message-border-radius: var(--lpca-message-border-radius, 32px);
-
-  /* Bot Message */
   --df-messenger-message-bot-border: 1px solid
     var(--lpca-m-white-12, rgba(255, 255, 255, 0.12));
   --df-messenger-message-bot-border-top-left-radius: var(
@@ -65,8 +42,6 @@
       rgba(22, 22, 22, 0.6) 75%
     )
   );
-
-  /* User Message */
   --df-messenger-message-user-border-top-right-radius: var(
     --lpca-message-border-radius,
     32px
@@ -75,8 +50,6 @@
     --lpca-g-full,
     linear-gradient(180deg, #5e43e7 22%, #437fe7 100%)
   );
-
-  /* Input Container */
   --df-messenger-input-box-border-radius: 32px;
   --df-messenger-input-background: var(
     --lpca-m-glass-full,
@@ -88,19 +61,14 @@
     )
   );
   --df-messenger-input-padding: 0px;
-
-  /* Sent Icon */
   --df-messenger-send-icon-color: rgba(255, 255, 255, 0.6);
   --df-messenger-send-icon-color-active: white;
   --df-messenger-send-icon-offset-x: 0;
   --df-messenger-send-icon-offset-y: 0;
-
-  /* Input */
   --df-messenger-input-box-border: none;
   --df-messenger-input-box-border-radius: 0px;
   --df-messenger-input-box-focus-border: 0px solid RED;
   --df-messenger-input-box-focus-padding: 16px 0 16px 32px;
-
   --df-messenger-chat-scroll-button-container-padding: 60px;
   --df-messenger-chat-scroll-button-align: center;
   --df-messenger-chat-scroll-button-font-size: 8px;
@@ -114,10 +82,100 @@
       rgba(22, 22, 22, 0.6) 75%
     )
   );
-
-  /* Bubble */
   --df-messenger-chat-bubble-icon-size: 64px;
   --df-messenger-chat-bubble-close-icon-size: 64px;
   --df-messenger-chat-bubble-close-icon-transform-rotate: 0deg;
   --df-messenger-chat-bubble-icon-color: transparent;
+  --df-messenger-chat-bubble-background: transparent;
+}
+#lpca-root {
+  z-index: 999;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: end;
+}
+#lpca-welcome-message {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 280px;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+  font-family: Inter, sans-serif;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+}
+#lpca-welcome-message_header {
+  display: flex;
+  color: var(--lpca-m-white, white);
+  align-items: center;
+  border-radius: 32px;
+  justify-content: center;
+  border: 1px solid rgba(120, 120, 120, 0.04);
+  background: linear-gradient(93deg, #16161699 25%, #2e2e2e99, #16161699 75%);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  margin-bottom: 2px;
+  font-size: 12px;
+  font-style: normal;
+  padding: 16px 16px 16px 34px;
+  gap: 8px;
+}
+#lpca-welcome-message_body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.lpca-welcome-message_option {
+  padding: 8px 24px;
+  justify-content: center;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(93deg, #16161666 25%, #2e2e2e66, #16161666 75%);
+  -webkit-backdrop-filter: blur(21px);
+  backdrop-filter: blur(21px);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16.8px;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+}
+.lpca-welcome-message_option:hover {
+  border: 1px solid var(--lpca-primary-color, #5e43e7);
+}
+.lpca-welcome-message_option:active {
+  border: 1px solid var(--lpca-primary-color, #5e43e7);
+  background: var(
+    --lpca-g-transparent,
+    linear-gradient(
+      180deg,
+      rgba(94, 67, 231, 0.2) 0%,
+      rgba(67, 127, 231, 0.2) 100%
+    ),
+    linear-gradient(
+      93deg,
+      rgba(22, 22, 22, 0.6) 25%,
+      rgba(46, 46, 46, 0.6) 50%,
+      rgba(22, 22, 22, 0.6) 75%
+    )
+  );
+}
+.lpca-collapse-button {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  padding: 0;
+  width: 18px;
+  height: 18px;
 }

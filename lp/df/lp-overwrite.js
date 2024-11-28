@@ -8,7 +8,7 @@
         for (const o of s.addedNodes)
           o.tagName === "LINK" && o.rel === "modulepreload" && a(o);
   }).observe(document, { childList: !0, subtree: !0 });
-  function e(n) {
+  function t(n) {
     const s = {};
     return (
       n.integrity && (s.integrity = n.integrity),
@@ -24,11 +24,11 @@
   function a(n) {
     if (n.ep) return;
     n.ep = !0;
-    const s = e(n);
+    const s = t(n);
     fetch(n.href, s);
   }
 })();
-const h1 = `
+const x1 = `
 <svg width="840" height="1000" viewBox="-420 -660 840 1000" fill="none" xmlns="http://www.w3.org/2000/svg" id="success-animation-svg">
    <style>
       @keyframes animation-success-circle4-color {
@@ -192,7 +192,7 @@ const h1 = `
    </defs>
 </svg>
 `,
-  g1 = `
+  v1 = `
 <svg width="160" height="160" viewBox="-110 -110 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
    <g opacity="0.8" filter="url(#idle-filter-group-1)">
       <g filter="url(#idle-filter-circle-1)" >
@@ -268,7 +268,7 @@ const h1 = `
    </style>
 </svg>
 `,
-  m1 = `
+  A1 = `
 <svg width="134" height="13" viewBox="0 0 134 13" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0.799006 10V2.72727H3.39134C3.95715 2.72727 4.4259 2.83026 4.79759 3.03622C5.16927 3.24219 5.44744 3.52391 5.6321 3.88139C5.81676 4.23651 5.90909 4.6366 5.90909 5.08168C5.90909 5.52912 5.81558 5.93158 5.62855 6.28906C5.44389 6.64418 5.16454 6.9259 4.79048 7.13423C4.4188 7.3402 3.95123 7.44318 3.38778 7.44318H1.60511V6.51278H3.28835C3.64583 6.51278 3.93584 6.45123 4.15838 6.32812C4.38092 6.20265 4.54427 6.0322 4.64844 5.81676C4.7526 5.60133 4.80469 5.3563 4.80469 5.08168C4.80469 4.80705 4.7526 4.56321 4.64844 4.35014C4.54427 4.13707 4.37973 3.97017 4.15483 3.84943C3.93229 3.72869 3.63873 3.66832 3.27415 3.66832H1.89631V10H0.799006ZM9.33949 10.1101C8.82813 10.1101 8.38187 9.9929 8.00071 9.75852C7.61955 9.52415 7.32363 9.19626 7.11293 8.77486C6.90223 8.35346 6.79688 7.86103 6.79688 7.29759C6.79688 6.73177 6.90223 6.23698 7.11293 5.81321C7.32363 5.38944 7.61955 5.06037 8.00071 4.82599C8.38187 4.59162 8.82813 4.47443 9.33949 4.47443C9.85085 4.47443 10.2971 4.59162 10.6783 4.82599C11.0594 5.06037 11.3554 5.38944 11.5661 5.81321C11.7768 6.23698 11.8821 6.73177 11.8821 7.29759C11.8821 7.86103 11.7768 8.35346 11.5661 8.77486C11.3554 9.19626 11.0594 9.52415 10.6783 9.75852C10.2971 9.9929 9.85085 10.1101 9.33949 10.1101ZM9.34304 9.21875C9.67448 9.21875 9.9491 9.13116 10.1669 8.95597C10.3847 8.78078 10.5457 8.54759 10.6499 8.25639C10.7564 7.9652 10.8097 7.64441 10.8097 7.29403C10.8097 6.94602 10.7564 6.62642 10.6499 6.33523C10.5457 6.04167 10.3847 5.80611 10.1669 5.62855C9.9491 5.45099 9.67448 5.36222 9.34304 5.36222C9.00923 5.36222 8.73224 5.45099 8.51207 5.62855C8.29427 5.80611 8.1321 6.04167 8.02557 6.33523C7.9214 6.62642 7.86932 6.94602 7.86932 7.29403C7.86932 7.64441 7.9214 7.9652 8.02557 8.25639C8.1321 8.54759 8.29427 8.78078 8.51207 8.95597C8.73224 9.13116 9.00923 9.21875 9.34304 9.21875ZM14.0838 10L12.4787 4.54545H13.576L14.6449 8.55114H14.6982L15.7706 4.54545H16.8679L17.9332 8.53338H17.9865L19.0483 4.54545H20.1456L18.544 10H17.4609L16.353 6.06179H16.2713L15.1634 10H14.0838ZM23.3381 10.1101C22.8007 10.1101 22.3378 9.99527 21.9496 9.76562C21.5637 9.53362 21.2654 9.2081 21.0547 8.78906C20.8464 8.36766 20.7422 7.87405 20.7422 7.30824C20.7422 6.74953 20.8464 6.2571 21.0547 5.83097C21.2654 5.40483 21.5589 5.07221 21.9354 4.8331C22.3142 4.59399 22.7569 4.47443 23.2635 4.47443C23.5713 4.47443 23.8696 4.52533 24.1584 4.62713C24.4472 4.72893 24.7064 4.88873 24.9361 5.10653C25.1657 5.32434 25.3468 5.60724 25.4794 5.95526C25.612 6.3009 25.6783 6.72112 25.6783 7.21591V7.59233H21.3423V6.79688H24.6378C24.6378 6.51752 24.581 6.27012 24.4673 6.05469C24.3537 5.83688 24.1939 5.66525 23.9879 5.53977C23.7843 5.4143 23.5452 5.35156 23.2706 5.35156C22.9723 5.35156 22.7119 5.42495 22.4893 5.57173C22.2692 5.71615 22.0987 5.90554 21.978 6.13991C21.8596 6.37192 21.8004 6.62405 21.8004 6.89631V7.51776C21.8004 7.88234 21.8643 8.19247 21.9922 8.44815C22.1224 8.70384 22.3035 8.89915 22.5355 9.03409C22.7675 9.16667 23.0386 9.23295 23.3487 9.23295C23.55 9.23295 23.7334 9.20455 23.8991 9.14773C24.0649 9.08854 24.2081 9.00095 24.3288 8.88494C24.4496 8.76894 24.5419 8.62571 24.6058 8.45526L25.6108 8.63636C25.5303 8.93229 25.3859 9.19152 25.1776 9.41406C24.9716 9.63423 24.7124 9.80587 24.3999 9.92898C24.0897 10.0497 23.7358 10.1101 23.3381 10.1101ZM26.8564 10V4.54545H27.8826V5.41193H27.9395C28.0389 5.11837 28.2141 4.88755 28.465 4.71946C28.7183 4.54901 29.0048 4.46378 29.3244 4.46378C29.3907 4.46378 29.4688 4.46615 29.5588 4.47088C29.6511 4.47562 29.7233 4.48153 29.7754 4.48864V5.50426C29.7328 5.49242 29.657 5.4794 29.5481 5.4652C29.4392 5.44863 29.3303 5.44034 29.2214 5.44034C28.9705 5.44034 28.7467 5.49361 28.5502 5.60014C28.3561 5.70431 28.2022 5.84991 28.0886 6.03693C27.975 6.22159 27.9181 6.43229 27.9181 6.66903V10H26.8564ZM32.8498 10.1101C32.3124 10.1101 31.8496 9.99527 31.4613 9.76562C31.0754 9.53362 30.7771 9.2081 30.5664 8.78906C30.3581 8.36766 30.2539 7.87405 30.2539 7.30824C30.2539 6.74953 30.3581 6.2571 30.5664 5.83097C30.7771 5.40483 31.0707 5.07221 31.4471 4.8331C31.8259 4.59399 32.2686 4.47443 32.7752 4.47443C33.083 4.47443 33.3813 4.52533 33.6701 4.62713C33.9589 4.72893 34.2182 4.88873 34.4478 5.10653C34.6774 5.32434 34.8585 5.60724 34.9911 5.95526C35.1237 6.3009 35.19 6.72112 35.19 7.21591V7.59233H30.854V6.79688H34.1495C34.1495 6.51752 34.0927 6.27012 33.979 6.05469C33.8654 5.83688 33.7056 5.66525 33.4996 5.53977C33.296 5.4143 33.0569 5.35156 32.7823 5.35156C32.484 5.35156 32.2236 5.42495 32.0011 5.57173C31.7809 5.71615 31.6104 5.90554 31.4897 6.13991C31.3713 6.37192 31.3121 6.62405 31.3121 6.89631V7.51776C31.3121 7.88234 31.3761 8.19247 31.5039 8.44815C31.6341 8.70384 31.8152 8.89915 32.0472 9.03409C32.2792 9.16667 32.5503 9.23295 32.8604 9.23295C33.0617 9.23295 33.2451 9.20455 33.4109 9.14773C33.5766 9.08854 33.7198 9.00095 33.8406 8.88494C33.9613 8.76894 34.0536 8.62571 34.1175 8.45526L35.1225 8.63636C35.042 8.93229 34.8976 9.19152 34.6893 9.41406C34.4833 9.63423 34.2241 9.80587 33.9116 9.92898C33.6014 10.0497 33.2475 10.1101 32.8498 10.1101ZM38.41 10.1065C37.9696 10.1065 37.5766 9.99408 37.231 9.76918C36.8877 9.5419 36.6178 9.21875 36.4213 8.79972C36.2272 8.37831 36.1301 7.87287 36.1301 7.28338C36.1301 6.69389 36.2284 6.18963 36.4249 5.7706C36.6238 5.35156 36.896 5.03078 37.2417 4.80824C37.5873 4.5857 37.9791 4.47443 38.4171 4.47443C38.7556 4.47443 39.0279 4.53125 39.2338 4.64489C39.4422 4.75616 39.6032 4.88636 39.7168 5.03551C39.8328 5.18466 39.9228 5.31605 39.9867 5.42969H40.0506V2.72727H41.1124V10H40.0755V9.15128H39.9867C39.9228 9.26728 39.8304 9.39986 39.7097 9.54901C39.5913 9.69815 39.428 9.82836 39.2196 9.93963C39.0113 10.0509 38.7414 10.1065 38.41 10.1065ZM38.6444 9.20099C38.9498 9.20099 39.2078 9.1205 39.4185 8.95952C39.6316 8.79616 39.7926 8.57008 39.9015 8.28125C40.0127 7.99242 40.0684 7.65625 40.0684 7.27273C40.0684 6.89394 40.0139 6.5625 39.905 6.27841C39.7961 5.99432 39.6363 5.77296 39.4256 5.61435C39.2149 5.45573 38.9545 5.37642 38.6444 5.37642C38.3248 5.37642 38.0584 5.45928 37.8453 5.625C37.6323 5.79072 37.4713 6.01681 37.3624 6.30327C37.2559 6.58973 37.2026 6.91288 37.2026 7.27273C37.2026 7.63731 37.257 7.9652 37.3659 8.25639C37.4748 8.54759 37.6358 8.77841 37.8489 8.94886C38.0643 9.11695 38.3295 9.20099 38.6444 9.20099ZM45.3596 10V2.72727H46.4213V5.42969H46.4853C46.5468 5.31605 46.6356 5.18466 46.7516 5.03551C46.8676 4.88636 47.0286 4.75616 47.2346 4.64489C47.4405 4.53125 47.7128 4.47443 48.0513 4.47443C48.4917 4.47443 48.8846 4.5857 49.2303 4.80824C49.5759 5.03078 49.847 5.35156 50.0435 5.7706C50.2424 6.18963 50.3418 6.69389 50.3418 7.28338C50.3418 7.87287 50.2435 8.37831 50.0471 8.79972C49.8506 9.21875 49.5807 9.5419 49.2374 9.76918C48.8941 9.99408 48.5023 10.1065 48.062 10.1065C47.7305 10.1065 47.4595 10.0509 47.2488 9.93963C47.0404 9.82836 46.8771 9.69815 46.7587 9.54901C46.6403 9.39986 46.5492 9.26728 46.4853 9.15128H46.3965V10H45.3596ZM46.4 7.27273C46.4 7.65625 46.4557 7.99242 46.5669 8.28125C46.6782 8.57008 46.8392 8.79616 47.0499 8.95952C47.2606 9.1205 47.5186 9.20099 47.824 9.20099C48.1413 9.20099 48.4064 9.11695 48.6195 8.94886C48.8326 8.77841 48.9935 8.54759 49.1025 8.25639C49.2137 7.9652 49.2694 7.63731 49.2694 7.27273C49.2694 6.91288 49.2149 6.58973 49.106 6.30327C48.9995 6.01681 48.8385 5.79072 48.623 5.625C48.41 5.45928 48.1436 5.37642 47.824 5.37642C47.5163 5.37642 47.2559 5.45573 47.0428 5.61435C46.8321 5.77296 46.6723 5.99432 46.5634 6.27841C46.4545 6.5625 46.4 6.89394 46.4 7.27273ZM52.0197 12.0455C51.8611 12.0455 51.7167 12.0324 51.5865 12.0064C51.4563 11.9827 51.3592 11.9567 51.2953 11.9283L51.551 11.0582C51.7451 11.1103 51.9179 11.1328 52.0694 11.1257C52.2209 11.1186 52.3547 11.0618 52.4707 10.9553C52.5891 10.8487 52.6932 10.6747 52.7832 10.4332L52.9146 10.071L50.9189 4.54545H52.0552L53.4366 8.77841H53.4934L54.8748 4.54545H56.0147L53.7669 10.728C53.6627 11.0121 53.5301 11.2524 53.3691 11.4489C53.2082 11.6477 53.0164 11.7969 52.7939 11.8963C52.5713 11.9957 52.3133 12.0455 52.0197 12.0455Z" fill="#AAAAAA"/>
     <g clip-path="url(#clip0_1543_7311)">
@@ -292,7 +292,7 @@ const h1 = `
     </defs>
 </svg>
 `,
-  C1 = `
+  M1 = `
 <svg width="50" height="50" viewBox="-77 -77 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
    <g id="lpca-bubble-icon">
       <g id="lpca-stars_center" class="lpca-stars_focusable">
@@ -356,7 +356,7 @@ const h1 = `
    </style>
 </svg>
 `,
-  b1 = `
+  w1 = `
 <svg width="62" height="60" viewBox="0 0 62 60" fill="none" xmlns="http://www.w3.org/2000/svg">
    <path d="M60.9002 30C60.9002 13.7184 47.3901 0.5 30.7001 0.5C14.01 0.5 0.5 13.7184 0.5 30C0.5 46.2817 14.01 59.5 30.7001 59.5C35.5044 59.5 39.6615 58.2966 43.5218 56.3509C44.6375 55.7884 45.8574 55.6425 46.9377 55.9593L53.7035 57.9426C57.1579 58.9554 60.3274 55.8089 59.3079 52.4882L59.7837 52.3421L59.3079 52.4882L57.2782 45.8768C56.9511 44.8116 57.1027 43.6104 57.6806 42.5159C59.6707 38.7459 60.9002 34.6882 60.9002 30Z" fill="url(#paint0_linear_1909_8438)"/>
    <path d="M60.9002 30C60.9002 13.7184 47.3901 0.5 30.7001 0.5C14.01 0.5 0.5 13.7184 0.5 30C0.5 46.2817 14.01 59.5 30.7001 59.5C35.5044 59.5 39.6615 58.2966 43.5218 56.3509C44.6375 55.7884 45.8574 55.6425 46.9377 55.9593L53.7035 57.9426C57.1579 58.9554 60.3274 55.8089 59.3079 52.4882L59.7837 52.3421L59.3079 52.4882L57.2782 45.8768C56.9511 44.8116 57.1027 43.6104 57.6806 42.5159C59.6707 38.7459 60.9002 34.6882 60.9002 30Z" fill="url(#paint1_linear_1909_8438)" fill-opacity="0.2"/>
@@ -388,10 +388,10 @@ const h1 = `
    </defs>
 </svg>
 `;
-function w(t) {
+function F(e) {
   "@babel/helpers - typeof";
   return (
-    (w =
+    (F =
       typeof Symbol == "function" && typeof Symbol.iterator == "symbol"
         ? function (r) {
             return typeof r;
@@ -404,27 +404,27 @@ function w(t) {
               ? "symbol"
               : typeof r;
           }),
-    w(t)
+    F(e)
   );
 }
-var y1 = /^\s+/,
-  x1 = /\s+$/;
-function i(t, r) {
-  if (((t = t || ""), (r = r || {}), t instanceof i)) return t;
-  if (!(this instanceof i)) return new i(t, r);
-  var e = v1(t);
-  (this._originalInput = t),
-    (this._r = e.r),
-    (this._g = e.g),
-    (this._b = e.b),
-    (this._a = e.a),
+var S1 = /^\s+/,
+  L1 = /\s+$/;
+function i(e, r) {
+  if (((e = e || ""), (r = r || {}), e instanceof i)) return e;
+  if (!(this instanceof i)) return new i(e, r);
+  var t = H1(e);
+  (this._originalInput = e),
+    (this._r = t.r),
+    (this._g = t.g),
+    (this._b = t.b),
+    (this._a = t.a),
     (this._roundA = Math.round(100 * this._a) / 100),
-    (this._format = r.format || e.format),
+    (this._format = r.format || t.format),
     (this._gradientType = r.gradientType),
     this._r < 1 && (this._r = Math.round(this._r)),
     this._g < 1 && (this._g = Math.round(this._g)),
     this._b < 1 && (this._b = Math.round(this._b)),
-    (this._ok = e.ok);
+    (this._ok = t.ok);
 }
 i.prototype = {
   isDark: function () {
@@ -451,17 +451,17 @@ i.prototype = {
   },
   getLuminance: function () {
     var r = this.toRgb(),
-      e,
+      t,
       a,
       n,
       s,
       o,
       l;
     return (
-      (e = r.r / 255),
+      (t = r.r / 255),
       (a = r.g / 255),
       (n = r.b / 255),
-      e <= 0.03928 ? (s = e / 12.92) : (s = Math.pow((e + 0.055) / 1.055, 2.4)),
+      t <= 0.03928 ? (s = t / 12.92) : (s = Math.pow((t + 0.055) / 1.055, 2.4)),
       a <= 0.03928 ? (o = a / 12.92) : (o = Math.pow((a + 0.055) / 1.055, 2.4)),
       n <= 0.03928 ? (l = n / 12.92) : (l = Math.pow((n + 0.055) / 1.055, 2.4)),
       0.2126 * s + 0.7152 * o + 0.0722 * l
@@ -469,43 +469,43 @@ i.prototype = {
   },
   setAlpha: function (r) {
     return (
-      (this._a = s1(r)), (this._roundA = Math.round(100 * this._a) / 100), this
+      (this._a = d1(r)), (this._roundA = Math.round(100 * this._a) / 100), this
     );
   },
   toHsv: function () {
-    var r = R(this._r, this._g, this._b);
+    var r = I(this._r, this._g, this._b);
     return { h: r.h * 360, s: r.s, v: r.v, a: this._a };
   },
   toHsvString: function () {
-    var r = R(this._r, this._g, this._b),
-      e = Math.round(r.h * 360),
+    var r = I(this._r, this._g, this._b),
+      t = Math.round(r.h * 360),
       a = Math.round(r.s * 100),
       n = Math.round(r.v * 100);
     return this._a == 1
-      ? "hsv(" + e + ", " + a + "%, " + n + "%)"
-      : "hsva(" + e + ", " + a + "%, " + n + "%, " + this._roundA + ")";
+      ? "hsv(" + t + ", " + a + "%, " + n + "%)"
+      : "hsva(" + t + ", " + a + "%, " + n + "%, " + this._roundA + ")";
   },
   toHsl: function () {
-    var r = B(this._r, this._g, this._b);
+    var r = q(this._r, this._g, this._b);
     return { h: r.h * 360, s: r.s, l: r.l, a: this._a };
   },
   toHslString: function () {
-    var r = B(this._r, this._g, this._b),
-      e = Math.round(r.h * 360),
+    var r = q(this._r, this._g, this._b),
+      t = Math.round(r.h * 360),
       a = Math.round(r.s * 100),
       n = Math.round(r.l * 100);
     return this._a == 1
-      ? "hsl(" + e + ", " + a + "%, " + n + "%)"
-      : "hsla(" + e + ", " + a + "%, " + n + "%, " + this._roundA + ")";
+      ? "hsl(" + t + ", " + a + "%, " + n + "%)"
+      : "hsla(" + t + ", " + a + "%, " + n + "%, " + this._roundA + ")";
   },
   toHex: function (r) {
-    return E(this._r, this._g, this._b, r);
+    return Z(this._r, this._g, this._b, r);
   },
   toHexString: function (r) {
     return "#" + this.toHex(r);
   },
   toHex8: function (r) {
-    return w1(this._r, this._g, this._b, this._a, r);
+    return B1(this._r, this._g, this._b, this._a, r);
   },
   toHex8String: function (r) {
     return "#" + this.toHex8(r);
@@ -539,27 +539,27 @@ i.prototype = {
   },
   toPercentageRgb: function () {
     return {
-      r: Math.round(f(this._r, 255) * 100) + "%",
-      g: Math.round(f(this._g, 255) * 100) + "%",
-      b: Math.round(f(this._b, 255) * 100) + "%",
+      r: Math.round(d(this._r, 255) * 100) + "%",
+      g: Math.round(d(this._g, 255) * 100) + "%",
+      b: Math.round(d(this._b, 255) * 100) + "%",
       a: this._a,
     };
   },
   toPercentageRgbString: function () {
     return this._a == 1
       ? "rgb(" +
-          Math.round(f(this._r, 255) * 100) +
+          Math.round(d(this._r, 255) * 100) +
           "%, " +
-          Math.round(f(this._g, 255) * 100) +
+          Math.round(d(this._g, 255) * 100) +
           "%, " +
-          Math.round(f(this._b, 255) * 100) +
+          Math.round(d(this._b, 255) * 100) +
           "%)"
       : "rgba(" +
-          Math.round(f(this._r, 255) * 100) +
+          Math.round(d(this._r, 255) * 100) +
           "%, " +
-          Math.round(f(this._g, 255) * 100) +
+          Math.round(d(this._g, 255) * 100) +
           "%, " +
-          Math.round(f(this._b, 255) * 100) +
+          Math.round(d(this._b, 255) * 100) +
           "%, " +
           this._roundA +
           ")";
@@ -569,33 +569,33 @@ i.prototype = {
       ? "transparent"
       : this._a < 1
       ? !1
-      : T1[E(this._r, this._g, this._b, !0)] || !1;
+      : P1[Z(this._r, this._g, this._b, !0)] || !1;
   },
   toFilter: function (r) {
-    var e = "#" + I(this._r, this._g, this._b, this._a),
-      a = e,
+    var t = "#" + G(this._r, this._g, this._b, this._a),
+      a = t,
       n = this._gradientType ? "GradientType = 1, " : "";
     if (r) {
       var s = i(r);
-      a = "#" + I(s._r, s._g, s._b, s._a);
+      a = "#" + G(s._r, s._g, s._b, s._a);
     }
     return (
       "progid:DXImageTransform.Microsoft.gradient(" +
       n +
       "startColorstr=" +
-      e +
+      t +
       ",endColorstr=" +
       a +
       ")"
     );
   },
   toString: function (r) {
-    var e = !!r;
+    var t = !!r;
     r = r || this._format;
     var a = !1,
       n = this._a < 1 && this._a >= 0,
       s =
-        !e &&
+        !t &&
         n &&
         (r === "hex" ||
           r === "hex6" ||
@@ -621,8 +621,8 @@ i.prototype = {
   clone: function () {
     return i(this.toString());
   },
-  _applyModification: function (r, e) {
-    var a = r.apply(null, [this].concat([].slice.call(e)));
+  _applyModification: function (r, t) {
+    var a = r.apply(null, [this].concat([].slice.call(t)));
     return (
       (this._r = a._r),
       (this._g = a._g),
@@ -632,193 +632,193 @@ i.prototype = {
     );
   },
   lighten: function () {
-    return this._applyModification(F1, arguments);
+    return this._applyModification(Z1, arguments);
   },
   brighten: function () {
-    return this._applyModification(k1, arguments);
+    return this._applyModification(G1, arguments);
   },
   darken: function () {
-    return this._applyModification(B1, arguments);
+    return this._applyModification(T1, arguments);
   },
   desaturate: function () {
-    return this._applyModification(L1, arguments);
+    return this._applyModification(E1, arguments);
   },
   saturate: function () {
-    return this._applyModification(S1, arguments);
+    return this._applyModification(q1, arguments);
   },
   greyscale: function () {
-    return this._applyModification(H1, arguments);
+    return this._applyModification(I1, arguments);
   },
   spin: function () {
-    return this._applyModification(R1, arguments);
+    return this._applyModification(V1, arguments);
   },
-  _applyCombination: function (r, e) {
-    return r.apply(null, [this].concat([].slice.call(e)));
+  _applyCombination: function (r, t) {
+    return r.apply(null, [this].concat([].slice.call(t)));
   },
   analogous: function () {
-    return this._applyCombination(Z1, arguments);
+    return this._applyCombination(U1, arguments);
   },
   complement: function () {
-    return this._applyCombination(E1, arguments);
+    return this._applyCombination(O1, arguments);
   },
   monochromatic: function () {
-    return this._applyCombination(G1, arguments);
+    return this._applyCombination(N1, arguments);
   },
   splitcomplement: function () {
-    return this._applyCombination(I1, arguments);
+    return this._applyCombination($1, arguments);
   },
   triad: function () {
-    return this._applyCombination(Z, [3]);
+    return this._applyCombination(T, [3]);
   },
   tetrad: function () {
-    return this._applyCombination(Z, [4]);
+    return this._applyCombination(T, [4]);
   },
 };
-i.fromRatio = function (t, r) {
-  if (w(t) == "object") {
-    var e = {};
-    for (var a in t)
-      t.hasOwnProperty(a) && (a === "a" ? (e[a] = t[a]) : (e[a] = A(t[a])));
-    t = e;
+i.fromRatio = function (e, r) {
+  if (F(e) == "object") {
+    var t = {};
+    for (var a in e)
+      e.hasOwnProperty(a) && (a === "a" ? (t[a] = e[a]) : (t[a] = w(e[a])));
+    e = t;
   }
-  return i(t, r);
+  return i(e, r);
 };
-function v1(t) {
+function H1(e) {
   var r = { r: 0, g: 0, b: 0 },
-    e = 1,
+    t = 1,
     a = null,
     n = null,
     s = null,
     o = !1,
     l = !1;
   return (
-    typeof t == "string" && (t = U1(t)),
-    w(t) == "object" &&
-      (C(t.r) && C(t.g) && C(t.b)
-        ? ((r = _1(t.r, t.g, t.b)),
+    typeof e == "string" && (e = W1(e)),
+    F(e) == "object" &&
+      (C(e.r) && C(e.g) && C(e.b)
+        ? ((r = F1(e.r, e.g, e.b)),
           (o = !0),
-          (l = String(t.r).substr(-1) === "%" ? "prgb" : "rgb"))
-        : C(t.h) && C(t.s) && C(t.v)
-        ? ((a = A(t.s)),
-          (n = A(t.v)),
-          (r = M1(t.h, a, n)),
+          (l = String(e.r).substr(-1) === "%" ? "prgb" : "rgb"))
+        : C(e.h) && C(e.s) && C(e.v)
+        ? ((a = w(e.s)),
+          (n = w(e.v)),
+          (r = R1(e.h, a, n)),
           (o = !0),
           (l = "hsv"))
-        : C(t.h) &&
-          C(t.s) &&
-          C(t.l) &&
-          ((a = A(t.s)),
-          (s = A(t.l)),
-          (r = A1(t.h, a, s)),
+        : C(e.h) &&
+          C(e.s) &&
+          C(e.l) &&
+          ((a = w(e.s)),
+          (s = w(e.l)),
+          (r = k1(e.h, a, s)),
           (o = !0),
           (l = "hsl")),
-      t.hasOwnProperty("a") && (e = t.a)),
-    (e = s1(e)),
+      e.hasOwnProperty("a") && (t = e.a)),
+    (t = d1(t)),
     {
       ok: o,
-      format: t.format || l,
+      format: e.format || l,
       r: Math.min(255, Math.max(r.r, 0)),
       g: Math.min(255, Math.max(r.g, 0)),
       b: Math.min(255, Math.max(r.b, 0)),
-      a: e,
+      a: t,
     }
   );
 }
-function _1(t, r, e) {
-  return { r: f(t, 255) * 255, g: f(r, 255) * 255, b: f(e, 255) * 255 };
+function F1(e, r, t) {
+  return { r: d(e, 255) * 255, g: d(r, 255) * 255, b: d(t, 255) * 255 };
 }
-function B(t, r, e) {
-  (t = f(t, 255)), (r = f(r, 255)), (e = f(e, 255));
-  var a = Math.max(t, r, e),
-    n = Math.min(t, r, e),
+function q(e, r, t) {
+  (e = d(e, 255)), (r = d(r, 255)), (t = d(t, 255));
+  var a = Math.max(e, r, t),
+    n = Math.min(e, r, t),
     s,
     o,
     l = (a + n) / 2;
   if (a == n) s = o = 0;
   else {
-    var d = a - n;
-    switch (((o = l > 0.5 ? d / (2 - a - n) : d / (a + n)), a)) {
-      case t:
-        s = (r - e) / d + (r < e ? 6 : 0);
+    var f = a - n;
+    switch (((o = l > 0.5 ? f / (2 - a - n) : f / (a + n)), a)) {
+      case e:
+        s = (r - t) / f + (r < t ? 6 : 0);
         break;
       case r:
-        s = (e - t) / d + 2;
+        s = (t - e) / f + 2;
         break;
-      case e:
-        s = (t - r) / d + 4;
+      case t:
+        s = (e - r) / f + 4;
         break;
     }
     s /= 6;
   }
   return { h: s, s: o, l };
 }
-function A1(t, r, e) {
+function k1(e, r, t) {
   var a, n, s;
-  (t = f(t, 360)), (r = f(r, 100)), (e = f(e, 100));
-  function o(p, _, h) {
+  (e = d(e, 360)), (r = d(r, 100)), (t = d(t, 100));
+  function o(u, M, p) {
     return (
-      h < 0 && (h += 1),
-      h > 1 && (h -= 1),
-      h < 1 / 6
-        ? p + (_ - p) * 6 * h
-        : h < 1 / 2
-        ? _
-        : h < 2 / 3
-        ? p + (_ - p) * (2 / 3 - h) * 6
-        : p
+      p < 0 && (p += 1),
+      p > 1 && (p -= 1),
+      p < 1 / 6
+        ? u + (M - u) * 6 * p
+        : p < 1 / 2
+        ? M
+        : p < 2 / 3
+        ? u + (M - u) * (2 / 3 - p) * 6
+        : u
     );
   }
-  if (r === 0) a = n = s = e;
+  if (r === 0) a = n = s = t;
   else {
-    var l = e < 0.5 ? e * (1 + r) : e + r - e * r,
-      d = 2 * e - l;
-    (a = o(d, l, t + 1 / 3)), (n = o(d, l, t)), (s = o(d, l, t - 1 / 3));
+    var l = t < 0.5 ? t * (1 + r) : t + r - t * r,
+      f = 2 * t - l;
+    (a = o(f, l, e + 1 / 3)), (n = o(f, l, e)), (s = o(f, l, e - 1 / 3));
   }
   return { r: a * 255, g: n * 255, b: s * 255 };
 }
-function R(t, r, e) {
-  (t = f(t, 255)), (r = f(r, 255)), (e = f(e, 255));
-  var a = Math.max(t, r, e),
-    n = Math.min(t, r, e),
+function I(e, r, t) {
+  (e = d(e, 255)), (r = d(r, 255)), (t = d(t, 255));
+  var a = Math.max(e, r, t),
+    n = Math.min(e, r, t),
     s,
     o,
     l = a,
-    d = a - n;
-  if (((o = a === 0 ? 0 : d / a), a == n)) s = 0;
+    f = a - n;
+  if (((o = a === 0 ? 0 : f / a), a == n)) s = 0;
   else {
     switch (a) {
-      case t:
-        s = (r - e) / d + (r < e ? 6 : 0);
+      case e:
+        s = (r - t) / f + (r < t ? 6 : 0);
         break;
       case r:
-        s = (e - t) / d + 2;
+        s = (t - e) / f + 2;
         break;
-      case e:
-        s = (t - r) / d + 4;
+      case t:
+        s = (e - r) / f + 4;
         break;
     }
     s /= 6;
   }
   return { h: s, s: o, v: l };
 }
-function M1(t, r, e) {
-  (t = f(t, 360) * 6), (r = f(r, 100)), (e = f(e, 100));
-  var a = Math.floor(t),
-    n = t - a,
-    s = e * (1 - r),
-    o = e * (1 - n * r),
-    l = e * (1 - (1 - n) * r),
-    d = a % 6,
-    p = [e, o, s, s, l, e][d],
-    _ = [l, e, e, o, s, s][d],
-    h = [s, s, l, e, e, o][d];
-  return { r: p * 255, g: _ * 255, b: h * 255 };
+function R1(e, r, t) {
+  (e = d(e, 360) * 6), (r = d(r, 100)), (t = d(t, 100));
+  var a = Math.floor(e),
+    n = e - a,
+    s = t * (1 - r),
+    o = t * (1 - n * r),
+    l = t * (1 - (1 - n) * r),
+    f = a % 6,
+    u = [t, o, s, s, l, t][f],
+    M = [l, t, t, o, s, s][f],
+    p = [s, s, l, t, t, o][f];
+  return { r: u * 255, g: M * 255, b: p * 255 };
 }
-function E(t, r, e, a) {
+function Z(e, r, t, a) {
   var n = [
-    m(Math.round(t).toString(16)),
-    m(Math.round(r).toString(16)),
     m(Math.round(e).toString(16)),
+    m(Math.round(r).toString(16)),
+    m(Math.round(t).toString(16)),
   ];
   return a &&
     n[0].charAt(0) == n[0].charAt(1) &&
@@ -827,12 +827,12 @@ function E(t, r, e, a) {
     ? n[0].charAt(0) + n[1].charAt(0) + n[2].charAt(0)
     : n.join("");
 }
-function w1(t, r, e, a, n) {
+function B1(e, r, t, a, n) {
   var s = [
-    m(Math.round(t).toString(16)),
-    m(Math.round(r).toString(16)),
     m(Math.round(e).toString(16)),
-    m(i1(a)),
+    m(Math.round(r).toString(16)),
+    m(Math.round(t).toString(16)),
+    m(u1(a)),
   ];
   return n &&
     s[0].charAt(0) == s[0].charAt(1) &&
@@ -842,103 +842,103 @@ function w1(t, r, e, a, n) {
     ? s[0].charAt(0) + s[1].charAt(0) + s[2].charAt(0) + s[3].charAt(0)
     : s.join("");
 }
-function I(t, r, e, a) {
+function G(e, r, t, a) {
   var n = [
-    m(i1(a)),
-    m(Math.round(t).toString(16)),
-    m(Math.round(r).toString(16)),
+    m(u1(a)),
     m(Math.round(e).toString(16)),
+    m(Math.round(r).toString(16)),
+    m(Math.round(t).toString(16)),
   ];
   return n.join("");
 }
-i.equals = function (t, r) {
-  return !t || !r ? !1 : i(t).toRgbString() == i(r).toRgbString();
+i.equals = function (e, r) {
+  return !e || !r ? !1 : i(e).toRgbString() == i(r).toRgbString();
 };
 i.random = function () {
   return i.fromRatio({ r: Math.random(), g: Math.random(), b: Math.random() });
 };
-function L1(t, r) {
+function E1(e, r) {
   r = r === 0 ? 0 : r || 10;
-  var e = i(t).toHsl();
-  return (e.s -= r / 100), (e.s = S(e.s)), i(e);
+  var t = i(e).toHsl();
+  return (t.s -= r / 100), (t.s = R(t.s)), i(t);
 }
-function S1(t, r) {
+function q1(e, r) {
   r = r === 0 ? 0 : r || 10;
-  var e = i(t).toHsl();
-  return (e.s += r / 100), (e.s = S(e.s)), i(e);
+  var t = i(e).toHsl();
+  return (t.s += r / 100), (t.s = R(t.s)), i(t);
 }
-function H1(t) {
-  return i(t).desaturate(100);
+function I1(e) {
+  return i(e).desaturate(100);
 }
-function F1(t, r) {
+function Z1(e, r) {
   r = r === 0 ? 0 : r || 10;
-  var e = i(t).toHsl();
-  return (e.l += r / 100), (e.l = S(e.l)), i(e);
+  var t = i(e).toHsl();
+  return (t.l += r / 100), (t.l = R(t.l)), i(t);
 }
-function k1(t, r) {
+function G1(e, r) {
   r = r === 0 ? 0 : r || 10;
-  var e = i(t).toRgb();
+  var t = i(e).toRgb();
   return (
-    (e.r = Math.max(0, Math.min(255, e.r - Math.round(255 * -(r / 100))))),
-    (e.g = Math.max(0, Math.min(255, e.g - Math.round(255 * -(r / 100))))),
-    (e.b = Math.max(0, Math.min(255, e.b - Math.round(255 * -(r / 100))))),
-    i(e)
+    (t.r = Math.max(0, Math.min(255, t.r - Math.round(255 * -(r / 100))))),
+    (t.g = Math.max(0, Math.min(255, t.g - Math.round(255 * -(r / 100))))),
+    (t.b = Math.max(0, Math.min(255, t.b - Math.round(255 * -(r / 100))))),
+    i(t)
   );
 }
-function B1(t, r) {
+function T1(e, r) {
   r = r === 0 ? 0 : r || 10;
-  var e = i(t).toHsl();
-  return (e.l -= r / 100), (e.l = S(e.l)), i(e);
+  var t = i(e).toHsl();
+  return (t.l -= r / 100), (t.l = R(t.l)), i(t);
 }
-function R1(t, r) {
-  var e = i(t).toHsl(),
-    a = (e.h + r) % 360;
-  return (e.h = a < 0 ? 360 + a : a), i(e);
+function V1(e, r) {
+  var t = i(e).toHsl(),
+    a = (t.h + r) % 360;
+  return (t.h = a < 0 ? 360 + a : a), i(t);
 }
-function E1(t) {
-  var r = i(t).toHsl();
+function O1(e) {
+  var r = i(e).toHsl();
   return (r.h = (r.h + 180) % 360), i(r);
 }
-function Z(t, r) {
+function T(e, r) {
   if (isNaN(r) || r <= 0)
     throw new Error("Argument to polyad must be a positive number");
-  for (var e = i(t).toHsl(), a = [i(t)], n = 360 / r, s = 1; s < r; s++)
-    a.push(i({ h: (e.h + s * n) % 360, s: e.s, l: e.l }));
+  for (var t = i(e).toHsl(), a = [i(e)], n = 360 / r, s = 1; s < r; s++)
+    a.push(i({ h: (t.h + s * n) % 360, s: t.s, l: t.l }));
   return a;
 }
-function I1(t) {
-  var r = i(t).toHsl(),
-    e = r.h;
+function $1(e) {
+  var r = i(e).toHsl(),
+    t = r.h;
   return [
-    i(t),
-    i({ h: (e + 72) % 360, s: r.s, l: r.l }),
-    i({ h: (e + 216) % 360, s: r.s, l: r.l }),
+    i(e),
+    i({ h: (t + 72) % 360, s: r.s, l: r.l }),
+    i({ h: (t + 216) % 360, s: r.s, l: r.l }),
   ];
 }
-function Z1(t, r, e) {
-  (r = r || 6), (e = e || 30);
-  var a = i(t).toHsl(),
-    n = 360 / e,
-    s = [i(t)];
+function U1(e, r, t) {
+  (r = r || 6), (t = t || 30);
+  var a = i(e).toHsl(),
+    n = 360 / t,
+    s = [i(e)];
   for (a.h = (a.h - ((n * r) >> 1) + 720) % 360; --r; )
     (a.h = (a.h + n) % 360), s.push(i(a));
   return s;
 }
-function G1(t, r) {
+function N1(e, r) {
   r = r || 6;
   for (
-    var e = i(t).toHsv(), a = e.h, n = e.s, s = e.v, o = [], l = 1 / r;
+    var t = i(e).toHsv(), a = t.h, n = t.s, s = t.v, o = [], l = 1 / r;
     r--;
 
   )
     o.push(i({ h: a, s: n, v: s })), (s = (s + l) % 1);
   return o;
 }
-i.mix = function (t, r, e) {
-  e = e === 0 ? 0 : e || 50;
-  var a = i(t).toRgb(),
+i.mix = function (e, r, t) {
+  t = t === 0 ? 0 : t || 50;
+  var a = i(e).toRgb(),
     n = i(r).toRgb(),
-    s = e / 100,
+    s = t / 100,
     o = {
       r: (n.r - a.r) * s + a.r,
       g: (n.g - a.g) * s + a.g,
@@ -947,19 +947,19 @@ i.mix = function (t, r, e) {
     };
   return i(o);
 };
-i.readability = function (t, r) {
-  var e = i(t),
+i.readability = function (e, r) {
+  var t = i(e),
     a = i(r);
   return (
-    (Math.max(e.getLuminance(), a.getLuminance()) + 0.05) /
-    (Math.min(e.getLuminance(), a.getLuminance()) + 0.05)
+    (Math.max(t.getLuminance(), a.getLuminance()) + 0.05) /
+    (Math.min(t.getLuminance(), a.getLuminance()) + 0.05)
   );
 };
-i.isReadable = function (t, r, e) {
-  var a = i.readability(t, r),
+i.isReadable = function (e, r, t) {
+  var a = i.readability(e, r),
     n,
     s;
-  switch (((s = !1), (n = q1(e)), n.level + n.size)) {
+  switch (((s = !1), (n = Y1(t)), n.level + n.size)) {
     case "AAsmall":
     case "AAAlarge":
       s = a >= 4.5;
@@ -973,21 +973,21 @@ i.isReadable = function (t, r, e) {
   }
   return s;
 };
-i.mostReadable = function (t, r, e) {
+i.mostReadable = function (e, r, t) {
   var a = null,
     n = 0,
     s,
     o,
     l,
-    d;
-  (e = e || {}), (o = e.includeFallbackColors), (l = e.level), (d = e.size);
-  for (var p = 0; p < r.length; p++)
-    (s = i.readability(t, r[p])), s > n && ((n = s), (a = i(r[p])));
-  return i.isReadable(t, a, { level: l, size: d }) || !o
+    f;
+  (t = t || {}), (o = t.includeFallbackColors), (l = t.level), (f = t.size);
+  for (var u = 0; u < r.length; u++)
+    (s = i.readability(e, r[u])), s > n && ((n = s), (a = i(r[u])));
+  return i.isReadable(e, a, { level: l, size: f }) || !o
     ? a
-    : ((e.includeFallbackColors = !1), i.mostReadable(t, ["#fff", "#000"], e));
+    : ((t.includeFallbackColors = !1), i.mostReadable(e, ["#fff", "#000"], t));
 };
-var F = (i.names = {
+var E = (i.names = {
     aliceblue: "f0f8ff",
     antiquewhite: "faebd7",
     aqua: "0ff",
@@ -1138,65 +1138,65 @@ var F = (i.names = {
     yellow: "ff0",
     yellowgreen: "9acd32",
   }),
-  T1 = (i.hexNames = V1(F));
-function V1(t) {
+  P1 = (i.hexNames = D1(E));
+function D1(e) {
   var r = {};
-  for (var e in t) t.hasOwnProperty(e) && (r[t[e]] = e);
+  for (var t in e) e.hasOwnProperty(t) && (r[e[t]] = t);
   return r;
 }
-function s1(t) {
-  return (t = parseFloat(t)), (isNaN(t) || t < 0 || t > 1) && (t = 1), t;
+function d1(e) {
+  return (e = parseFloat(e)), (isNaN(e) || e < 0 || e > 1) && (e = 1), e;
 }
-function f(t, r) {
-  O1(t) && (t = "100%");
-  var e = $1(t);
+function d(e, r) {
+  z1(e) && (e = "100%");
+  var t = j1(e);
   return (
-    (t = Math.min(r, Math.max(0, parseFloat(t)))),
-    e && (t = parseInt(t * r, 10) / 100),
-    Math.abs(t - r) < 1e-6 ? 1 : (t % r) / parseFloat(r)
+    (e = Math.min(r, Math.max(0, parseFloat(e)))),
+    t && (e = parseInt(e * r, 10) / 100),
+    Math.abs(e - r) < 1e-6 ? 1 : (e % r) / parseFloat(r)
   );
 }
-function S(t) {
-  return Math.min(1, Math.max(0, t));
+function R(e) {
+  return Math.min(1, Math.max(0, e));
 }
-function u(t) {
-  return parseInt(t, 16);
+function h(e) {
+  return parseInt(e, 16);
 }
-function O1(t) {
-  return typeof t == "string" && t.indexOf(".") != -1 && parseFloat(t) === 1;
+function z1(e) {
+  return typeof e == "string" && e.indexOf(".") != -1 && parseFloat(e) === 1;
 }
-function $1(t) {
-  return typeof t == "string" && t.indexOf("%") != -1;
+function j1(e) {
+  return typeof e == "string" && e.indexOf("%") != -1;
 }
-function m(t) {
-  return t.length == 1 ? "0" + t : "" + t;
+function m(e) {
+  return e.length == 1 ? "0" + e : "" + e;
 }
-function A(t) {
-  return t <= 1 && (t = t * 100 + "%"), t;
+function w(e) {
+  return e <= 1 && (e = e * 100 + "%"), e;
 }
-function i1(t) {
-  return Math.round(parseFloat(t) * 255).toString(16);
+function u1(e) {
+  return Math.round(parseFloat(e) * 255).toString(16);
 }
-function G(t) {
-  return u(t) / 255;
+function V(e) {
+  return h(e) / 255;
 }
 var g = (function () {
-  var t = "[-\\+]?\\d+%?",
+  var e = "[-\\+]?\\d+%?",
     r = "[-\\+]?\\d*\\.\\d+%?",
-    e = "(?:" + r + ")|(?:" + t + ")",
-    a = "[\\s|\\(]+(" + e + ")[,|\\s]+(" + e + ")[,|\\s]+(" + e + ")\\s*\\)?",
+    t = "(?:" + r + ")|(?:" + e + ")",
+    a = "[\\s|\\(]+(" + t + ")[,|\\s]+(" + t + ")[,|\\s]+(" + t + ")\\s*\\)?",
     n =
       "[\\s|\\(]+(" +
-      e +
+      t +
       ")[,|\\s]+(" +
-      e +
+      t +
       ")[,|\\s]+(" +
-      e +
+      t +
       ")[,|\\s]+(" +
-      e +
+      t +
       ")\\s*\\)?";
   return {
-    CSS_UNIT: new RegExp(e),
+    CSS_UNIT: new RegExp(t),
     rgb: new RegExp("rgb" + a),
     rgba: new RegExp("rgba" + n),
     hsl: new RegExp("hsl" + a),
@@ -1209,87 +1209,88 @@ var g = (function () {
     hex8: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/,
   };
 })();
-function C(t) {
-  return !!g.CSS_UNIT.exec(t);
+function C(e) {
+  return !!g.CSS_UNIT.exec(e);
 }
-function U1(t) {
-  t = t.replace(y1, "").replace(x1, "").toLowerCase();
+function W1(e) {
+  e = e.replace(S1, "").replace(L1, "").toLowerCase();
   var r = !1;
-  if (F[t]) (t = F[t]), (r = !0);
-  else if (t == "transparent")
+  if (E[e]) (e = E[e]), (r = !0);
+  else if (e == "transparent")
     return { r: 0, g: 0, b: 0, a: 0, format: "name" };
-  var e;
-  return (e = g.rgb.exec(t))
-    ? { r: e[1], g: e[2], b: e[3] }
-    : (e = g.rgba.exec(t))
-    ? { r: e[1], g: e[2], b: e[3], a: e[4] }
-    : (e = g.hsl.exec(t))
-    ? { h: e[1], s: e[2], l: e[3] }
-    : (e = g.hsla.exec(t))
-    ? { h: e[1], s: e[2], l: e[3], a: e[4] }
-    : (e = g.hsv.exec(t))
-    ? { h: e[1], s: e[2], v: e[3] }
-    : (e = g.hsva.exec(t))
-    ? { h: e[1], s: e[2], v: e[3], a: e[4] }
-    : (e = g.hex8.exec(t))
+  var t;
+  return (t = g.rgb.exec(e))
+    ? { r: t[1], g: t[2], b: t[3] }
+    : (t = g.rgba.exec(e))
+    ? { r: t[1], g: t[2], b: t[3], a: t[4] }
+    : (t = g.hsl.exec(e))
+    ? { h: t[1], s: t[2], l: t[3] }
+    : (t = g.hsla.exec(e))
+    ? { h: t[1], s: t[2], l: t[3], a: t[4] }
+    : (t = g.hsv.exec(e))
+    ? { h: t[1], s: t[2], v: t[3] }
+    : (t = g.hsva.exec(e))
+    ? { h: t[1], s: t[2], v: t[3], a: t[4] }
+    : (t = g.hex8.exec(e))
     ? {
-        r: u(e[1]),
-        g: u(e[2]),
-        b: u(e[3]),
-        a: G(e[4]),
+        r: h(t[1]),
+        g: h(t[2]),
+        b: h(t[3]),
+        a: V(t[4]),
         format: r ? "name" : "hex8",
       }
-    : (e = g.hex6.exec(t))
-    ? { r: u(e[1]), g: u(e[2]), b: u(e[3]), format: r ? "name" : "hex" }
-    : (e = g.hex4.exec(t))
+    : (t = g.hex6.exec(e))
+    ? { r: h(t[1]), g: h(t[2]), b: h(t[3]), format: r ? "name" : "hex" }
+    : (t = g.hex4.exec(e))
     ? {
-        r: u(e[1] + "" + e[1]),
-        g: u(e[2] + "" + e[2]),
-        b: u(e[3] + "" + e[3]),
-        a: G(e[4] + "" + e[4]),
+        r: h(t[1] + "" + t[1]),
+        g: h(t[2] + "" + t[2]),
+        b: h(t[3] + "" + t[3]),
+        a: V(t[4] + "" + t[4]),
         format: r ? "name" : "hex8",
       }
-    : (e = g.hex3.exec(t))
+    : (t = g.hex3.exec(e))
     ? {
-        r: u(e[1] + "" + e[1]),
-        g: u(e[2] + "" + e[2]),
-        b: u(e[3] + "" + e[3]),
+        r: h(t[1] + "" + t[1]),
+        g: h(t[2] + "" + t[2]),
+        b: h(t[3] + "" + t[3]),
         format: r ? "name" : "hex",
       }
     : !1;
 }
-function q1(t) {
-  var r, e;
+function Y1(e) {
+  var r, t;
   return (
-    (t = t || { level: "AA", size: "small" }),
-    (r = (t.level || "AA").toUpperCase()),
-    (e = (t.size || "small").toLowerCase()),
+    (e = e || { level: "AA", size: "small" }),
+    (r = (e.level || "AA").toUpperCase()),
+    (t = (e.size || "small").toLowerCase()),
     r !== "AA" && r !== "AAA" && (r = "AA"),
-    e !== "small" && e !== "large" && (e = "small"),
-    { level: r, size: e }
+    t !== "small" && t !== "large" && (t = "small"),
+    { level: r, size: t }
   );
 }
-const P1 = () => {
-  const t = ["#bd211b", "#0006df", "#3e6006", "#5e43e7"].at(
+const K1 = () => {
+  const e = ["#bd211b", "#0006df", "#3e6006", "#5e43e7"].at(
     Math.floor(Math.random() * 4)
   );
   return {
     welcomeMessage: "Hi, do you want the free guide?",
     welcomeOptions: ["I want your free guide", "I'd like to schedule a demo"],
     logo:
-      t === "#5e43e7"
+      e === "#5e43e7"
         ? "broken image"
         : "https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png",
     title: "My Conversion Assistant",
-    primaryColor: t,
-    secondaryColor: t === "#5e43e7" ? "#437fe7" : "",
-    isPro: t !== "#5e43e7",
+    primaryColor: e,
+    secondaryColor: e === "#5e43e7" ? "#437fe7" : "",
+    isPro: e !== "#5e43e7",
+    delayWelcomeMessage: 3e3,
   };
 };
-function N1(t = "#5e43e7", r = null) {
-  const e = i(t).toRgb();
+function Q1(e = "#5e43e7", r = null) {
+  const t = i(e).toRgb();
   let a;
-  r ? (a = i(r).toRgb()) : (a = i(t).brighten(10).lighten(15).toRgb());
+  r ? (a = i(r).toRgb()) : (a = i(e).brighten(10).lighten(15).toRgb());
   const n = (s, o) => {
     document.documentElement.style.setProperty(s, o);
   };
@@ -1302,153 +1303,36 @@ function N1(t = "#5e43e7", r = null) {
     n("--lpca-m-white-60", "rgba(255, 255, 255, 0.40)"),
     n("--lpca-m-white-12", "rgba(255, 255, 255, 0.12)"),
     n("--lpca-m-white-4", "rgba(255, 255, 255, 0.04)"),
-    n("--lpca-primary-color", `rgba(${e.r}, ${e.g}, ${e.b}, 1)`),
+    n("--lpca-primary-color", `rgba(${t.r}, ${t.g}, ${t.b}, 1)`),
     n("--lpca-secondary-color", `rgba(${a.r}, ${a.g}, ${a.b}, 1)`),
     n(
       "--lpca-g-full",
-      `linear-gradient( 180deg, rgba(${e.r}, ${e.g}, ${e.b}, 0.02) 0%, rgba(${e.r}, ${e.g}, ${e.b}, 0.2) 100% ), linear-gradient( 180deg, var(--lpca-secondary-color) 0%, var(--lpca-primary-color) 100% )`
+      `linear-gradient( 180deg, rgba(${t.r}, ${t.g}, ${t.b}, 0.02) 0%, rgba(${t.r}, ${t.g}, ${t.b}, 0.2) 100% ), linear-gradient( 180deg, var(--lpca-secondary-color) 0%, var(--lpca-primary-color) 100% )`
     ),
     n(
       "--lpca-g-transparent",
-      `linear-gradient( 180deg, rgba(${e.r}, ${e.g}, ${e.b}, 0.02) 0%, rgba(${e.r}, ${e.g}, ${e.b}, 0.2) 100% ), linear-gradient( 180deg, rgba(${a.r}, ${a.g}, ${a.b}, 0.2) 0%, rgba(${e.r}, ${e.g}, ${e.b}, 0.2) 100% ), linear-gradient( 93deg, rgba(22, 22, 22, 0.6) 25%, rgba(46, 46, 46, 0.6) 50%, rgba(22, 22, 22, 0.6) 75% )`
+      `linear-gradient( 180deg, rgba(${t.r}, ${t.g}, ${t.b}, 0.02) 0%, rgba(${t.r}, ${t.g}, ${t.b}, 0.2) 100% ), linear-gradient( 180deg, rgba(${a.r}, ${a.g}, ${a.b}, 0.2) 0%, rgba(${t.r}, ${t.g}, ${t.b}, 0.2) 100% ), linear-gradient( 93deg, rgba(22, 22, 22, 0.6) 25%, rgba(46, 46, 46, 0.6) 50%, rgba(22, 22, 22, 0.6) 75% )`
     ),
     n(
       "--lpca-g-glass-transparent",
-      `linear-gradient( 93deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 24.5%, rgba(255, 255, 255, 0) 100% ), linear-gradient(135deg, rgba(${e.r}, ${e.g}, ${e.b}, 0.04) 0%, rgba(${e.r}, ${e.g}, ${e.b}, 0.4) 100%), linear-gradient(93deg, var(--lpca-secondary-color) 0%, var(--lpca-primary-color) 100%)`
+      `linear-gradient( 93deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 24.5%, rgba(255, 255, 255, 0) 100% ), linear-gradient(135deg, rgba(${t.r}, ${t.g}, ${t.b}, 0.04) 0%, rgba(${t.r}, ${t.g}, ${t.b}, 0.4) 100%), linear-gradient(93deg, var(--lpca-secondary-color) 0%, var(--lpca-primary-color) 100%)`
     );
 }
-const z1 = "https://www.leadpages.com/",
-  D1 = document.getElementById("lpca-root"),
-  o1 = document.createElement("style");
-o1.innerHTML = `
-df-messenger {
-  /* lp css variable */
+const X1 = "https://www.leadpages.com/",
+  J1 = document.getElementById("lpca-root"),
+  h1 = document.createElement("style");
+h1.innerHTML = `
 
-
-  /* google dialog flow */
-  --df-messenger-font-family: "Inter", sans-serif;
-  --df-messenger-font-size: 12px;
-  --df-messenger-font-color: white;
-  --df-messenger-primary-color: red;
-  --df-messenger-chat-border: 0px solid orange;
-
-  /* title */
-  --df-messenger-titlebar-title-font-family: "Inter", sans-serif;
-  --df-messenger-titlebar-title-font-size: 14px;
-  --df-messenger-titlebar-padding: 0px 12px;
-  --df-messenger-titlebar-font-color: white;
-  --df-messenger-titlebar-border: 1px solid
-    var(--lpca-m-white-12, rgba(255, 255, 255, 0.12));
-  --df-messenger-titlebar-border-bottom: 1px solid
-    var(--lpca-m-white-12, rgba(255, 255, 255, 0.12));
-  --df-messenger-titlebar-background: var(
-    --lpca-m-glass-full,
-    linear-gradient(
-      93deg,
-      rgba(22, 22, 22, 0.6) 25%,
-      rgba(85, 85, 85, 0.6) 50%,
-      rgba(22, 22, 22, 0.6) 75%
-    )
-  );
-  --df-messenger-chat-border-radius: 32px;
-  --df-messenger-titlebar-icon-width: 40px;
-  --df-messenger-titlebar-icon-height: 40px;
-
-  /* Message Container */
-  --df-messenger-chat-background: none;
-  --df-messenger-chat-padding: 82px 0px 56px 0px;
-
-  /* Message */
-  --df-messenger-message-border-radius: var(--lpca-message-border-radius, 32px);
-
-  /* Bot Message */
-  --df-messenger-message-bot-border: 1px solid
-    var(--lpca-m-white-12, rgba(255, 255, 255, 0.12));
-  --df-messenger-message-bot-border-top-left-radius: var(
-    --lpca-message-border-radius,
-    32px
-  );
-  --df-messenger-message-bot-background: var(
-    --g-glass-full,
-    linear-gradient(
-      93deg,
-      rgba(22, 22, 22, 0.6) 25%,
-      rgba(85, 85, 85, 0.6) 50%,
-      rgba(22, 22, 22, 0.6) 75%
-    )
-  );
-
-  /* User Message */
-  --df-messenger-message-user-border-top-right-radius: var(
-    --lpca-message-border-radius,
-    32px
-  );
-  --df-messenger-message-user-background: var(
-    --lpca-g-full,
-    linear-gradient(180deg, #5e43e7 22%, #437fe7 100%)
-  );
-
-  /* Input Container */
-  --df-messenger-input-box-border-radius: 32px;
-  --df-messenger-input-background: var(
-    --lpca-m-glass-full,
-    linear-gradient(
-      93deg,
-      rgba(22, 22, 22, 0.6) 25%,
-      rgba(85, 85, 85, 0.6) 50%,
-      rgba(22, 22, 22, 0.6) 75%
-    )
-  );
-  --df-messenger-input-padding: 0px;
-
-  /* Sent Icon */
-  --df-messenger-send-icon-color: rgba(255, 255, 255, 0.6);
-  --df-messenger-send-icon-color-active: white;
-  --df-messenger-send-icon-offset-x: 0;
-  --df-messenger-send-icon-offset-y: 0;
-
-  /* Input */
-  --df-messenger-input-box-border: none;
-  --df-messenger-input-box-border-radius: 0px;
-  --df-messenger-input-box-focus-border: 0px solid RED;
-  --df-messenger-input-box-focus-padding: 16px 0 16px 32px;
-
-  --df-messenger-chat-scroll-button-container-padding: 60px;
-  --df-messenger-chat-scroll-button-align: center;
-  --df-messenger-chat-scroll-button-font-size: 8px;
-  --df-messenger-chat-scroll-button-font-color: white;
-  --df-messenger-chat-scroll-button-background: var(
-    --lpca-m-glass-full,
-    linear-gradient(
-      93deg,
-      rgba(22, 22, 22, 0.6) 25%,
-      rgba(85, 85, 85, 0.6) 50%,
-      rgba(22, 22, 22, 0.6) 75%
-    )
-  );
-
-  /* Bubble */
-  --df-messenger-chat-bubble-icon-size: 64px;
-  --df-messenger-chat-bubble-close-icon-size: 64px;
-  --df-messenger-chat-bubble-close-icon-transform-rotate: 0deg;
-  --df-messenger-chat-bubble-icon-color: transparent;
-  --df-messenger-chat-bubble-background: transparent;
-
-  z-index: 999;
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-}
 `;
-D1.appendChild(o1);
-const k = P1();
-N1(k.primaryColor, k.secondaryColor);
-const j1 = document
+J1.appendChild(h1);
+const _ = K1();
+Q1(_.primaryColor, _.secondaryColor);
+const ee = document
     .querySelector("df-messenger")
     .querySelector("df-messenger-chat-bubble")
     .shadowRoot.querySelector("df-messenger-titlebar").shadowRoot,
-  l1 = document.createElement("style");
-l1.innerHTML = `
+  p1 = document.createElement("style");
+p1.innerHTML = `
     .titlebar-wrapper { 
         border-radius: 32px; 
         position: absolute;
@@ -1459,32 +1343,32 @@ l1.innerHTML = `
         height: 66px;
         backdrop-filter: blur(50px);
     }`;
-j1.appendChild(l1);
-var T, V, O, $, U, q;
-const H =
-    (q =
-      (U =
-        ($ =
-          (O =
-            (V =
-              (T =
+ee.appendChild(p1);
+var U, N, P, D, z, j;
+const B =
+    (j =
+      (z =
+        (D =
+          (P =
+            (N =
+              (U =
                 document == null
                   ? void 0
                   : document.querySelector("df-messenger")) == null
                 ? void 0
-                : T.querySelector("df-messenger-chat-bubble")) == null
+                : U.querySelector("df-messenger-chat-bubble")) == null
               ? void 0
-              : V.shadowRoot) == null
+              : N.shadowRoot) == null
             ? void 0
-            : O.querySelector("df-messenger-chat")) == null
+            : P.querySelector("df-messenger-chat")) == null
           ? void 0
-          : $.shadowRoot) == null
+          : D.shadowRoot) == null
         ? void 0
-        : U.querySelector("df-messenger-user-input")) == null
+        : z.querySelector("df-messenger-user-input")) == null
       ? void 0
-      : q.shadowRoot,
-  c1 = document.createElement("style");
-c1.innerHTML = `
+      : j.shadowRoot,
+  g1 = document.createElement("style");
+g1.innerHTML = `
     .input-container { 
         border-radius: 32px; 
         position: absolute !important;
@@ -1523,37 +1407,37 @@ c1.innerHTML = `
         fill: rgba(255, 255, 255, 0.6) !important;
     }
     `;
-H == null || H.appendChild(c1);
-var P, N, z;
+B == null || B.appendChild(g1);
+var W, Y, K;
 const c =
-    (z =
-      (N =
-        (P =
+    (K =
+      (Y =
+        (W =
           document == null ? void 0 : document.querySelector("df-messenger")) ==
         null
           ? void 0
-          : P.querySelector("df-messenger-chat-bubble")) == null
+          : W.querySelector("df-messenger-chat-bubble")) == null
         ? void 0
-        : N.shadowRoot) == null
+        : Y.shadowRoot) == null
       ? void 0
-      : z.querySelector("button"),
-  f1 = document.createElement("style");
-f1.innerHTML = `
+      : K.querySelector("button"),
+  m1 = document.createElement("style");
+m1.innerHTML = `
     img {
         z-index: 1;
     }
 `;
-c == null || c.appendChild(f1);
-const v = document.createElement("div");
-v.id = "idle-animation";
-v.innerHTML = g1;
-v.style.position = "absolute";
-v.style.zIndex = "0";
-v.style.pointerEvents = "none";
-c == null || c.insertBefore(v, c == null ? void 0 : c.firstChild);
-window.addEventListener("df-response-received", (t) => {
+c == null || c.appendChild(m1);
+const A = document.createElement("div");
+A.id = "idle-animation";
+A.innerHTML = v1;
+A.style.position = "absolute";
+A.style.zIndex = "0";
+A.style.pointerEvents = "none";
+c == null || c.insertBefore(A, c == null ? void 0 : c.firstChild);
+window.addEventListener("df-response-received", (e) => {
   const r = document.createElement("div");
-  (r.innerHTML = h1),
+  (r.innerHTML = x1),
     (r.style.position = "absolute"),
     (r.style.zIndex = "0"),
     (r.style.bottom = "-310px"),
@@ -1562,51 +1446,18 @@ window.addEventListener("df-response-received", (t) => {
     (r.style.pointerEvents = "none"),
     c == null || c.insertBefore(r, c == null ? void 0 : c.firstChild),
     setTimeout(() => {
-      const e = c.querySelector("#success-animation");
-      e && e.parentNode.removeChild(e);
+      const t = c.querySelector("#success-animation");
+      t && t.parentNode.removeChild(t);
     }, 10 * 1e3 + 50);
 });
-var D, j, Y, K, W, X, J;
-const L =
-  (J =
-    (X =
-      (W =
-        (K =
-          (Y =
-            (j =
-              (D =
-                document == null
-                  ? void 0
-                  : document.querySelector("df-messenger")) == null
-                ? void 0
-                : D.querySelector("df-messenger-chat-bubble")) == null
-              ? void 0
-              : j.shadowRoot) == null
-            ? void 0
-            : Y.querySelector("df-messenger-chat")) == null
-          ? void 0
-          : K.shadowRoot) == null
-        ? void 0
-        : W.querySelector("df-messenger-user-input")) == null
-      ? void 0
-      : X.shadowRoot) == null
-    ? void 0
-    : J.querySelector("#send-icon");
-console.log("submitIcon", L);
-const M = document.createElement("object");
-M.id = "send-icon";
-M.data = "https://lucahsieh.github.io/lp/df/svg/sent.svg";
-M.type = "image/svg+xml";
-M.style.transform = "scale(0.7) translateY(2px)";
-L.parentNode.appendChild(M);
-L.parentNode.removeChild(L);
-var Q, e1, t1, r1, a1, n1;
-const Y1 =
-    (n1 =
-      (a1 =
-        (r1 =
-          (t1 =
-            (e1 =
+var Q, X, J, e1, t1, r1, a1;
+const k =
+  (a1 =
+    (r1 =
+      (t1 =
+        (e1 =
+          (J =
+            (X =
               (Q =
                 document == null
                   ? void 0
@@ -1614,81 +1465,234 @@ const Y1 =
                 ? void 0
                 : Q.querySelector("df-messenger-chat-bubble")) == null
               ? void 0
-              : e1.shadowRoot) == null
+              : X.shadowRoot) == null
             ? void 0
-            : t1.querySelector("df-messenger-chat")) == null
+            : J.querySelector("df-messenger-chat")) == null
           ? void 0
-          : r1.shadowRoot) == null
+          : e1.shadowRoot) == null
         ? void 0
-        : a1.querySelector("df-messenger-user-input")) == null
+        : t1.querySelector("df-messenger-user-input")) == null
       ? void 0
-      : n1.shadowRoot,
-  y = document.createElement("a");
-y.id = "leadpages-logo";
-y.innerHTML = m1;
-y.style.position = "absolute";
-y.style.bottom = "-26px";
-y.style.left = "8px";
-y.href = z1;
-y.target = "_blank";
-Y1.appendChild(y);
+      : r1.shadowRoot) == null
+    ? void 0
+    : a1.querySelector("#send-icon");
+console.log("submitIcon", k);
+const S = document.createElement("object");
+S.id = "send-icon";
+S.data = "https://lucahsieh.github.io/lp/df/svg/sent.svg";
+S.type = "image/svg+xml";
+S.style.transform = "scale(0.7) translateY(2px)";
+k.parentNode.appendChild(S);
+k.parentNode.removeChild(k);
+var n1, s1, i1, o1, l1, c1;
+const te =
+    (c1 =
+      (l1 =
+        (o1 =
+          (i1 =
+            (s1 =
+              (n1 =
+                document == null
+                  ? void 0
+                  : document.querySelector("df-messenger")) == null
+                ? void 0
+                : n1.querySelector("df-messenger-chat-bubble")) == null
+              ? void 0
+              : s1.shadowRoot) == null
+            ? void 0
+            : i1.querySelector("df-messenger-chat")) == null
+          ? void 0
+          : o1.shadowRoot) == null
+        ? void 0
+        : l1.querySelector("df-messenger-user-input")) == null
+      ? void 0
+      : c1.shadowRoot,
+  x = document.createElement("a");
+x.id = "leadpages-logo";
+x.innerHTML = A1;
+x.style.position = "absolute";
+x.style.bottom = "-26px";
+x.style.left = "8px";
+x.href = X1;
+x.target = "_blank";
+te.appendChild(x);
 const b = document.createElement("div");
 b.id = "bubble-container";
 b.style.position = "absolute";
 b.style.transition = "0.5s ease-in-out";
 b.style.transform = "translate(1px, 1px)";
-const d1 = document.createElement("img");
-d1.src = "https://lucahsieh.github.io/lp/df/svg/bubble_default.png";
-const u1 = document.createElement("div");
-u1.innerHTML = b1;
-b.appendChild(k.isPro ? u1 : d1);
-const K1 = () => {
-    const t = c.querySelectorAll(".lpca-stars_focusable");
-    console.log(t),
-      t.forEach((r) => {
+const C1 = document.createElement("img");
+C1.src = "https://lucahsieh.github.io/lp/df/svg/bubble_default.png";
+const b1 = document.createElement("div");
+b1.innerHTML = w1;
+b.appendChild(_.isPro ? b1 : C1);
+const re = () => {
+    const e = c.querySelectorAll(".lpca-stars_focusable");
+    console.log(e),
+      e.forEach((r) => {
         r.classList.add("lpca-stars_focus");
       });
   },
-  p1 = () => {
+  y1 = () => {
     c.querySelectorAll(".lpca-stars_focusable").forEach((r) => {
       r.classList.remove("lpca-stars_focus");
     });
   },
-  W1 = () => {
+  ae = () => {
     c.querySelectorAll(".lpca-stars_shadow_hidden").forEach((r) => {
       r.classList.add("lpca-stars_shadow_shown");
     });
   },
-  X1 = () => {
+  ne = () => {
     c.querySelectorAll(".lpca-stars_shadow_hidden").forEach((r) => {
       r.classList.remove("lpca-stars_shadow_shown");
     });
   };
 b.addEventListener("mouseenter", () => {
-  K1(), W1();
+  re(), ae();
 });
 b.addEventListener("mouseleave", () => {
-  p1(), X1();
+  y1(), ne();
 });
 b.addEventListener("mousedown", () => {
-  p1();
+  y1();
 });
 c == null || c.appendChild(b);
-window.addEventListener("df-chat-open-changed", (t) => {
-  console.log(`Chat is ${t.detail.isOpen ? "open" : "closed"}`);
-  const r = c.querySelector("#bubble-container"),
-    e = r.style.rotate;
-  t.detail.isOpen && !e
-    ? (r.style.rotate = "180deg")
-    : !t.detail.isOpen && !e
-    ? (r.style.rotate = "0deg")
-    : (r.style.rotate = `${parseInt(e) + 180}deg`);
+const v = document.createElement("div");
+v.id = "stars-container";
+v.innerHTML = M1;
+v.style.zIndex = "5";
+v.style.position = "absolute";
+v.style.pointerEvents = "none";
+v.style.transform = "scale(1.1) translateY(2px)";
+c == null || c.appendChild(v);
+const O = document.getElementById("lpca-welcome-message"),
+  $ = document.querySelector("#lpca-welcome-message_header"),
+  _1 = document.createElement("span");
+_1.innerHTML = _.welcomeMessage;
+$.insertBefore(_1, $.firstChild);
+const se = document.querySelector(".lpca-collapse-button");
+se.addEventListener("click", () => {
+  var e, r, t, a;
+  (a =
+    (t =
+      (r =
+        (e =
+          document == null ? void 0 : document.querySelector("df-messenger")) ==
+        null
+          ? void 0
+          : e.querySelector("df-messenger-chat-bubble")) == null
+        ? void 0
+        : r.shadowRoot) == null
+      ? void 0
+      : t.querySelector("button")) == null || a.click();
 });
-const x = document.createElement("div");
-x.id = "stars-container";
-x.innerHTML = C1;
-x.style.zIndex = "5";
-x.style.position = "absolute";
-x.style.pointerEvents = "none";
-x.style.transform = "scale(1.1) translateY(2px)";
-c == null || c.appendChild(x);
+const ie = document.querySelector("#lpca-welcome-message_body");
+var f1;
+(f1 = _ == null ? void 0 : _.welcomeOptions) == null ||
+  f1.forEach((e) => {
+    const r = document.createElement("button");
+    (r.className = "lpca-welcome-message_option"),
+      (r.innerHTML = e),
+      r.addEventListener("click", () => {
+        const t = document.querySelector("df-messenger");
+        t.sendQuery(e), t.renderCustomText(e, !1), H(!0), L(!1);
+      }),
+      ie.appendChild(r);
+  });
+setTimeout(() => {
+  var e, r, t, a;
+  (a =
+    (t =
+      (r =
+        (e =
+          document == null ? void 0 : document.querySelector("df-messenger")) ==
+        null
+          ? void 0
+          : e.querySelector("df-messenger-chat-bubble")) == null
+        ? void 0
+        : r.shadowRoot) == null
+      ? void 0
+      : t.querySelector("button")) == null || a.click();
+}, _.delayWelcomeMessage);
+const L = (e) => {
+    (O.style.visibility = e ? "visible" : "hidden"),
+      (O.style.opacity = e ? "1" : "0");
+  },
+  H = (e) => {
+    var t, a, n;
+    const r =
+      (n =
+        (a =
+          (t =
+            document == null
+              ? void 0
+              : document.querySelector("df-messenger")) == null
+            ? void 0
+            : t.querySelector("df-messenger-chat-bubble")) == null
+          ? void 0
+          : a.shadowRoot) == null
+        ? void 0
+        : n.querySelector("df-messenger-chat");
+    (r.style.visibility = e ? "visible" : "hidden"),
+      (r.style.opacity = e ? "1" : "0");
+  },
+  oe = (e) => {
+    const r = c.querySelector("#bubble-container"),
+      t = r.style.rotate;
+    e && !t
+      ? (r.style.rotate = "180deg")
+      : !e && !t
+      ? (r.style.rotate = "0deg")
+      : (r.style.rotate = `${parseInt(t) + 180}deg`);
+  },
+  le = (e) => {
+    var a, n, s, o, l, f, u;
+    oe(e);
+    const t =
+      ((u =
+        (f =
+          (l =
+            (o =
+              (s =
+                (n =
+                  (a =
+                    document == null
+                      ? void 0
+                      : document.querySelector("df-messenger")) == null
+                    ? void 0
+                    : a.querySelector("df-messenger-chat-bubble")) == null
+                  ? void 0
+                  : n.shadowRoot) == null
+                ? void 0
+                : s.querySelector("df-messenger-chat")) == null
+              ? void 0
+              : o.shadowRoot) == null
+            ? void 0
+            : l.querySelector("df-messenger-message-list")) == null
+          ? void 0
+          : f.shadowRoot) == null
+        ? void 0
+        : u.querySelectorAll(".entry")
+      ).length <= 0;
+    t && e
+      ? (L(!0), H(!1), console.log("new session"))
+      : !t && e
+      ? (L(!1), H(!0), console.log("existing session"))
+      : (L(!1), H(!1), console.log("closed"));
+  };
+window.addEventListener("df-chat-open-changed", (e) => {
+  le(e.detail.isOpen);
+});
+const y = document.createElement("button");
+y.innerText = "Clear Session";
+y.style.position = "absolute";
+y.style.width = "100px";
+y.style.height = "50px";
+y.style.top = 50;
+y.style.left = 50;
+y.style.zIndex = "1000";
+y.addEventListener("click", () => {
+  document.querySelector("df-messenger").clearStorage();
+});
+document.body.appendChild(y);
